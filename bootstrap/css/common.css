@@ -1,0 +1,248 @@
+/* Reset CSS  */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+    -webkit-text-size-adjust: none;
+  }
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Audi Type", sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 80px 0 0;
+    /* background: #333; */
+  }
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+    display: block;
+  }
+  ul,
+  ol,
+  dl {
+    list-style: none;
+    margin: 0;
+  }
+  img,
+  video {
+    border: 0;
+    vertical-align: top;
+  }
+  a,
+  a:link {
+    color: #333;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #333;
+  }
+  a:hover,
+  a:active {
+    color: #333;
+    text-decoration: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  input,
+  select {
+    vertical-align: middle;
+  }
+  label {
+    cursor: pointer;
+  }
+  .blind,
+  legend,
+  hr,
+  caption {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: -1000em;
+  }
+  i,
+  em,
+  address {
+    font-style: normal;
+    font-weight: normal;
+  }
+  p,
+  li,
+  dd {
+    line-height: 1.5em;
+  }
+.hidden, #skipNav{position: absolute; display: block;width:1px; height: 1px;
+    left:-1000%; top:0; overflow: hidden; color: #fff;}
+.row {
+  margin: 0;
+}
+
+#headerArea{font-family: "Audi Type"; position:fixed; left: 0; top: 0; width: 100%; height: 5rem; background:#fff; z-index: 2; border-bottom: 1px solid #ccc;}
+#headerArea h1{margin:0 0 0 4%;}
+#headerArea h1 a{position:relative; display: block; width: 6.25rem; height: 5rem; background:url(../images/logo_black.png) 0 50% no-repeat; background-size:auto 2.1875rem; font-size: 0; text-indent:-9999px; z-index: 1031; transition:all .5s;}
+
+
+.navbar-nav>li{margin-left:3.125rem;}
+.navbar-nav>li>a{padding:0;}
+#headerArea .navbar-nav li a{display: block;}
+#headerArea .navbar-nav li a h3{font-size:1.25rem; line-height: 5rem; color:#333; font-weight: 500; padding: 0; margin:0; transition: color .5s;}
+
+#headerArea .navbar-default .navbar-nav>.active a h3{color:rgb(0, 110, 255);}
+#headerArea .navbar-default .navbar-nav>.active>a,
+#headerArea .navbar-default .navbar-nav>.active>a:focus,
+#headerArea .navbar-default .navbar-nav>.active>a:hover{background:#fff;}
+
+@media(hover:hover){
+    #headerArea .navbar-nav:hover li a h3{color:#eee;}
+    #headerArea .navbar-nav li a:hover h3{color:#333;}
+}
+
+.navbar-right{margin-right: 4%;}
+
+.navbar-default .navbar-toggle{border: 0 none;}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle[aria-expanded="true"]{background-color:rgb(0, 110, 255);}
+.navbar-default .navbar-toggle:focus span,
+.navbar-default .navbar-toggle:hover span{background:#fff;}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{border-color:transparent;}
+
+.navbar-toggle{padding:0; margin: 0; width: 5rem; height: 5rem; border-radius:0;}
+.navbar-default{background:none; border: 0;}
+.navbar-toggle .icon-bar{margin:0 auto;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#333; width: 25px;}
+.navbar-toggle .icon-bar+.icon-bar {margin-top: 6px;}
+      
+      /* 푸터 공통 영역 */
+      #footerArea {
+        text-align: center;
+        background: rgba(0, 0, 0, 1);
+        position: relative;
+        width: 100%;
+        padding: 3rem 6%;
+        z-index: -10;
+        margin-top: 5%;
+      }
+      #footerArea span {
+        display: block;
+        width: 152px;
+        height: 95px;
+        background: url(../images/logo_white.png) 0 no-repeat;
+        background-size: 100% auto;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      #footerArea p {
+        color: #fff;
+        font-size: 1rem;
+        margin: 20px 0;
+      }
+      .topMove {
+        display: block;
+        position: fixed;
+        right: 0;
+        bottom: 5%;
+        color: #fff;
+        background: rgba(0, 0, 0, 1);
+        width: 60px;
+        height: 60px;
+        border-radius: 30px;
+        text-indent: -999px;
+        overflow: hidden;
+        transform: translate(-50%, 0);
+        opacity: 0;
+        transition: all .3s;
+      }
+      .topMove p {
+        width: 20px;
+        height: 30px;
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        top: 12px;
+        transform: translate(-50%, 0);
+      }
+      .topMove p span {
+        display: block;
+        width: 20px;
+        height: 61px;
+        background: url(../images/topMove.png) center center no-repeat;
+        position: absolute;
+        left: 50%;
+        top: 3px;
+        transform: translate(-50%, 0);
+        transition: all .25s;
+      }
+      .topMove:hover p span {
+        top: -30px;
+      }
+
+
+@media screen and (min-width:993px) and (max-width:1280px) {
+    #footerArea p {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 992px) {
+  #footerArea p {
+    display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+}
+}
+@media screen and (min-width:768px) {
+  #headerArea .navbar-default .navbar-nav>.active>a,
+  #headerArea .navbar-default .navbar-nav>.active>a:focus,
+  #headerArea .navbar-default .navbar-nav>.active>a:hover{background:transparent;}
+  }
+@media screen and (max-width: 767px) {
+    /* #headerArea .headerInner .gnbOpenBtn {
+        display: none;
+    } */
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+      background: rgb(0, 110, 255);
+    }
+    #headerArea .navbar-nav li a h3 {
+      color: #fff;
+    }
+}
+/* intro */
+.pageIntro > div {
+  background: #00010c;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+}
+.pageIntro > div img {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

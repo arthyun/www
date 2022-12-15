@@ -1,0 +1,140 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub2.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(3) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 7px 12.5%;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #182eae;
+}
+
+/* content */
+#content .tabBtn {
+    width: 90%;
+    margin: 0 5%;
+    text-align: center;
+}
+#content .tabBtn a {
+    display: inline-block;
+    width: 25%;
+    margin: 7px 15px 7px 15px;
+    padding: 7px;
+    background: #ccc;
+    color: #fff;
+    font-weight: normal;
+    border-radius: 20px;
+    transition: all .3s;
+}
+#content .tabBtn a:nth-of-type(1){
+    background: rgba(239, 73, 90, 1);
+}
+
+#content .tabSection ul {
+    width: 90%;
+    margin: 0 5%;
+}
+#content .tabSection ul li {
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 7% 9%;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+#content .tabSection ul li a {
+    display: block;
+}
+#content .tabSection ul li img {
+    width: 30%;
+    float: left;
+}
+#content .tabSection ul li h3 {
+    margin-left: 27%;
+    padding-top: 12%;
+    font-weight: 600;
+    float: left;
+    color: #182eae;
+    font-size: 3.75vw;
+}
+#content .tabSection ul li p {
+    padding-top: 8%;
+    clear: both;
+    font-size: .86em;
+    text-align: justify;
+} 
+/* #content .tabSection ul li:nth-of-type(1) h3{
+    right: 0;
+}
+#content .tabSection ul li:nth-of-type(2) h3{
+    right: 8%;
+}
+#content .tabSection ul li:nth-of-type(3) h3{
+    right: 1%;
+}
+#content .tabSection ul li:nth-of-type(4) h3{
+    right: 0;
+}
+#content .tabSection ul li:nth-of-type(4) p{
+    word-spacing: -1px;
+}
+*/

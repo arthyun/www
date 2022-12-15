@@ -1,0 +1,329 @@
+<?
+  session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>홍보센터-뉴스룸</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="shortcut icon" href="../common/images/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./common/css/sub6common.css" >
+    <link rel="stylesheet" href="./css/sub6_content1.css" >
+    <script src="https://kit.fontawesome.com/bc0f1996aa.js" crossorigin="anonymous"></script>
+  </head>
+
+<?
+
+  @extract($_GET);
+  @extract($_POST);
+  @extract($_SESSION);
+
+  $table = "concert";
+  $ripple = "concert_ripple";
+
+	include "../lib/dbconn.php";
+
+	if(!$scale){
+    $scale = 6; // 한 화면에 표시되는 글 수
+  }
+
+    if ($mode=="search"){
+		if(!$search){
+			echo "<script>
+					    window.alert('검색할 단어를 입력해 주세요!');
+					    history.go(-1);
+				    </script>";
+			exit;
+		}
+		$sql = "select * from $table where $find like '%$search%' order by num desc";
+	} else {
+		$sql = "select * from $table order by num desc";
+	}
+
+	$result = mysql_query($sql);
+	$total_record = mysql_num_rows($result); // 전체 글 수
+
+	// 전체 페이지 수($total_page) 계산 
+	if ($total_record % $scale == 0){
+		$total_page = floor($total_record / $scale);      
+	} else {
+		$total_page = floor($total_record / $scale) + 1; 
+	}
+	if (!$page){ // 페이지번호($page)가 0 일 때
+		$page = 1; // 페이지 번호를 1로 초기화
+	}
+	// 표시할 페이지($page)에 따라 $start 계산  
+	$start = ($page - 1) * $scale;      
+	$number = $total_record - $start;
+?>
+
+  <body>
+    <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="./common/images/company_info_main6-2.jpg" alt="사업분야메인" >
+        <h3>홍보센터</h3>
+      </div>
+
+      <div class="subNav">
+        <ul>
+          <li class="current"><a href="./sub6_1.html">뉴스룸</a></li>
+          <li><a href="./sub6_2.html">미디어센터</a></li>
+          <li><a href="./sub6_3.html">공지사항</a></li>
+          <li><a href="./sub6_4.html">FAQ & 문의하기</a></li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span
+              ><a href="../index.html"><i class="fa-solid fa-house"></i></a
+            ></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_1.html">홍보센터</a></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_1.html">뉴스룸</a></span>
+          </div>
+          <h2>뉴스룸</h2>
+        </div>
+
+        <div class="contentArea">
+          <!-- 본문 컨텐츠영역 -->
+          <p class="intro">
+            오늘보다 나은 내일, 함께 나누는 가치 <br><span class="blue">코오롱 인더스트리</span>의 뉴스 소식을 만나보세요.
+          </p>
+
+          <div class="news_wrap">
+
+            <div class="news_sort">
+              <div class="total">총 <strong><?= $total_record ?></strong> 개의 게시물이 있습니다.</div>
+              <ul class="list_style">
+                <li class="active">
+                  <a class="listChange1 btnBox" href="#">목록형</a>
+                </li>
+                <li>
+                  <a class="listChange2 btnBox" href="#">박스형</a>
+                </li>
+              </ul>
+              <select class="scale" name="scale" onchange="location.href='sub6_1.html?scale='+this.value">
+                <option value="">보기</option>
+                <option value="6">6개씩</option>
+                <option value="9">9개씩</option>
+                <option value="12">12개씩</option>
+                <option value="15">15개씩</option>
+              </select>
+            </div>
+
+            <div class="news_list">
+              <ul class="list_cont">
+            <?		
+              for ($i = $start; $i < $start + $scale && $i < $total_record; $i++){
+                mysql_data_seek($result, $i); // 가져올 레코드로 위치(포인터) 이동  
+            
+                $row = mysql_fetch_array($result); // 하나의 레코드 가져오기
+                $item_num = $row[num];
+                $item_id = $row[id];
+                $item_name = $row[name];
+                $item_nick = $row[nick];
+                $item_hit = $row[hit];
+                $item_date = $row[regist_day];
+                $item_date = substr($item_date, 0, 10);  
+                $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
+                $item_content = str_replace(" ", "&nbsp;", $row[content]);
+                
+                // 썸네일 지정방법
+                if($row[file_copied_0]){
+                  $item_thumnail = './data/'.$row[file_copied_0];
+                } else {
+                  $item_thumnail = './data/default.jpg';
+                }
+
+                $sql = "select * from $ripple where parent=$item_num";
+                $result2 = mysql_query($sql, $connect);
+                $num_ripple = mysql_num_rows($result2); //parent에 해당하는 레코드 불러오기
+            ?>
+                <li>
+                  <a href="view3.php?table=<?=$table?>&num=<?=$item_num?>&page=<?=$page?>&scale=<?=$scale ?>&ripple=<?=$ripple?>">
+                  <div class="img">
+                    <img src="<?=$item_thumnail ?>" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong><?= $item_subject ?></strong>
+                    <p><?= $item_content ?></p>
+                    <span><?=$item_nick ?></span>
+                    <span><?=$item_date ?></span>
+                    <span>
+                      <i class="fa-regular fa-comment-dots"><i>댓글</i></i>
+            <?
+                if ($num_ripple){
+                  echo "$num_ripple";
+                } else {
+                  echo "0";
+                }
+            ?>
+                    </span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i><?=$item_hit ?></span>
+                  </div>
+                </a>
+                </li>
+              <?
+                  $number--;
+                }
+              ?>
+                <!-- <li>
+                  <a href="#">
+                  <div class="img">
+                    <img src="./images/content1/imageView2.png" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong>인조가죽, 친환경기술 특허출원 연평균 20% 증가..그 배경은?</strong>
+                    <p>동물복지 차원에서 천연가죽의 대체재로 주목받고 있는 인조가죽에 친환경 바람이 불고 있다. 인조가죽을 만들면서 사용된 독성 화학물질과 석유기반 재료로 인해 환경오염 문제가 대두되었지만, 이를 친환경 특허기술로 극복하고 있다는 분석이 나온다.
+                      특허청(청장 김용래)은 동물복지에 대한 관심이 증가하면서 인조가죽 관련 전체 특허출원은 최근 10년간(’10~’19) 연평균 14%로 꾸준히 증가한 것으로 나타났다고 1일 밝혔다. 이중에서 ‘친환경 기술'에 관한 특허출원은 4건에서 20건으로 5배(연평균 20%) 증가해 가파른 성장세를 보였다.
+                      친환경 기술은 '09년 가죽제품에 대한 유해물질 안전기준이 제정된 이후와 '15년 개정된 이후 대폭 증가한 것으로 나타났는데, 이는 환경 규제와 친환경에 대한 사회적 관심이 특허출원에 영향을 미친 것으로 풀이된다.
+                      인조가죽의 세부기술별 특허출원은(’10~’19), 천연가죽 모방기술(47%), 친환경 기술(41%), 특이기능 부여기술(8%), 비건가죽 제조기술(5%) 순으로 나타났다.
+                    </p>
+                    <span>사용자</span>
+                    <span>2022-09-17</span>
+                    <span><i class="fa-regular fa-comment-dots"><i>댓글</i></i>0</span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i>19</span>
+                  </div>
+                </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                  <div class="img">
+                    <img src="./images/content1/imageView3.png" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong>코오롱재단, 환경교육 · 미담 발굴로 ‘살맛나는 세상’ 만든다</strong>
+                    <p>코오롱그룹은 산하에 오운문화재단, 꽃과어린왕자 두 재단을 두고 친환경 교육과 미담확산 등 공익사업을 추진 중이다.
+                      오운문화재단은 코오롱그룹 창업자 이원만 선대회장이 총 2억6000만원 상당의 주식과 현금을 출연해 1981년 건립된 재단이다. ‘오운(五雲)’이라는 뜻은 ‘오색구름이 바다를 건너가는 태몽을 통해 태어난 이 선대회장의 호다.
+                      재단은 40년간 청소년 교육·육성, 선행 · 미담사례 확산을 목적으로 공익사업을 추진 중이다. 이를 위해 장학사업·청소년수련원 운영·각계각층의 선행과 미담사례를 수집하고 사회에 널리 알리는 등 ’살맛나는 세상‘ 만들기에 나서고 있다. 
+                      재단 이사장은 이웅열 전 코오롱그룹 회장이, 대표이사는 백기훈 전 코오롱인더스트리 전무가 맡고 있다. 이사진은 총 11명으로, 주로 코오롱그룹 전직 임원으로 구성됐다. 다만 재단은 세부 이사진의 경력은 공개하지 않고 있다.
+                      꽃과어린왕자는 초등생 대상 친환경 에너지 교육 및 장학사업을 실시하는 재단이다. 코오롱, 코오롱건설 등 코오롱그룹 계열사에서 30억원을 출연해 2002년 건립됐다. 
+                      재단 이사장은 이 전 회장의 부인인 서창희 여사가 맡고 있다.
+                    </p>
+                    <span>사용자</span>
+                    <span>2022-09-17</span>
+                    <span><i class="fa-regular fa-comment-dots"><i>댓글</i></i>0</span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i>21</span>
+                  </div>
+                </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                  <div class="img">
+                    <img src="./images/content1/imageView4.png" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong>코오롱글로텍, 인조잔디 사업부 매각하나</strong>
+                    <p>인수·합병(M&A) 시장에서 코오롱그룹 계열사 코오롱글로텍의 인조잔디 사업부 매각 가능성이 흘러나오고 있다. 코오롱그룹은 매각에 대해 선을 긋고 있지만, 시장에선 매물로 인식하고 딜 향방을 예의주시하는 분위기다.
+                      9일 투자은행(IB) 업계에 따르면 코오롱그룹은 시장에서 코오롱글로텍의 인조잔디 사업부에 대한 매각 의사를 비밀리 타진 중에 있는 것으로 알려졌다. 국내 한 법무법인을 통해 시장에서 잠재적 원매자 군을 찾아 태핑(수요조사)을 진행중인 것으로 시장에서는 파악하고 있다.
+                      인조잔디는 천연잔디를 모방해 만든 제품으로 폴리에틸렌(PE), 폴리프로필렌(PP), 나일론 등 합성섬유로 만든다. 코오롱그룹에선 코오롱글로텍이 해당 사업을 영위하고 있다. 코오롱글로텍은 코오롱인더스트리가 지분 80% 가량을 보유한 회사다.
+                      코오롱글로텍은 축구, 야구, 하키, 테니스, 골프장 등에 깔리는 스포츠용 인조잔디를 제조·판매하는데, 주로 학교와 지방자치단체 등에 공급하고 있다. 사업보고서에 따르면 코오롱글로텍의 인조잔디 시장점유율은 2019년 말 기준 40% 수준이다.
+                    </p>
+                    <span>사용자</span>
+                    <span>2022-09-17</span>
+                    <span><i class="fa-regular fa-comment-dots"><i>댓글</i></i>0</span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i>40</span>
+                  </div>
+                </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                  <div class="img">
+                    <img src="./images/content1/imageView5.png" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong>코오롱인더 냉감소재 ‘포르페(FORPE)’...이른 열대야 수혜보나</strong>
+                    <p>‘포르페(FORPE)’는 코오롱인더스트리가 독자기술로 자체 개발한 특수 섬유로 피부에 시원한 느낌을 더해주는 냉감 섬유다. 높은 밀도의 구조를 갖추고 있어 외부 열을 퍼트리는 열전도율이 높은 HDPE(High Density Polyethylene, 고밀도 폴리에틸렌) 소재로 만들어졌다. 피부에 닿는 즉시 체온을 3~6℃ 낮춰주는 뛰어난 냉감성능을 갖는다. 포르페로 만든 원단에 피부가 닿으면 HDPE가 주위 열을 빼앗아 표면 온도를 낮추어 냉감성능을 극대화한다.
+                      코오롱인더스트리는 수요가 공급을 따라가지 못하는 상황이 지속되며 최근 증설을 마쳤고, 지난달 말 기준 생산량을 2배로 늘렸다. 현재 관련 시장에서 약 70% 이상(국내 연간 기준) 점유율을 차지고 있다. 국내 HDPE 냉감소재는 본격적으로 시장이 형성된 지 불과 3년 만에 약 10배 가까이 커졌다. 코오롱인더스트리는 지난 2017년 포르페를 개발, 시장 규모가 앞으로 지속 확대될 것이라 내다보고 냉감소재 사업을 지속 확장해 왔다.
+                    </p>
+                    <span>사용자</span>
+                    <span>2022-09-17</span>
+                    <span><i class="fa-regular fa-comment-dots"><i>댓글</i></i>0</span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i>10</span>
+                  </div>
+                </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                  <div class="img">
+                    <img src="./images/content1/imageView6.png" alt="첨부이미지">
+                  </div>
+                  <div class="cont">
+                    <strong>코오롱, 코로나 치료 앞장서고 친환경 꿈나무 떡잎부터 키운다</strong>
+                    <p>코오롱은 코로나19 확산 초기의 국가적 위기 상황에서 고유의 역량을 활용해 코로나19 위기 극복을 적극 지원한 바 있다.
+                      우선 코오롱은 지난해 4월 절대적으로 부족했던 음압 치료 병실의 구축을 지원하기 위해 경북 문경 소재 서울대학교병원 인재원에 24병상, 1개동 규모에 최신 공조 설비까지 갖춘 모듈형 음압 병실을 기부했다. 코오롱글로벌이 시공했으며, 25억원에 달하는 건립 비용은 그룹이 전액 부담했다.
+                      코오롱인더스트리는 전국적인 마스크 수급난의 해소를 위해 마스크용 핵심 부자재인 MB 필터를 무상으로 공급했다. 보유하고 있던 의료용 MB 필터 파일럿 설비를 마스크용 MB필터 제조용으로 전환해 마스크 200만여 장 분량의 필터를 생산, 제공했다는 설명이다.
+                      코오롱인더 FnC 부문은 방역 최일선에서 고군분투하는 의료진을 지원했다. 흡한속건 기능성 티셔츠 2000벌 및 바지 887벌 등 총 2억원 상당의 의류를 대구광역시에 파견됐던 공중 보건의들에게 전달했다.
+                    </p>
+                    <span>사용자</span>
+                    <span>2022-09-17</span>
+                    <span><i class="fa-regular fa-comment-dots"><i>댓글</i></i>0</span>
+                    <span><i class="fa-regular fa-eye"><i>조회수</i></i>52</span>
+                  </div>
+                </a>
+                </li> -->
+              </ul>
+            </div>
+            
+            <div class="page_num">
+              <span class="prev">이전</span>
+              <?
+                // 게시판 목록 하단에 페이지 링크 번호 출력
+                for ($i = 1; $i <= $total_page; $i++){
+                  if ($page == $i){  // 현재 페이지 번호 링크 안함
+                    echo "<span class='active'> $i </span>";
+                  } else { 
+                    echo "<span><a href='./sub6_1.html?page=$i&scale=$scale'> $i </a></span>";
+                  }      
+                }
+              ?>		
+              <span class="next">다음</span>
+            </div>
+  
+            <? 
+              if($userid){
+            ?>
+            <div class="btn_wrap">
+              <a href="./write_form3.php?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale ?>">글쓰기</a>
+              <a href="./sub6_1.html?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale ?>">목록</a>
+            </div>
+            <?
+              } else {
+            ?>
+            <div class="btn_wrap">
+              <a href="./sub6_1.html?table=<?=$table?>&page=<?=$page?>&scale=<?=$scale ?>">목록</a>
+            </div>
+            <?
+              }
+            ?>
+            <div class="news_search">
+              <form name="board_form" action="sub6_1.html?table=<?=$table?>&mode=search&page=<?=$page ?>&scale=<?=$scale ?>" method="post">
+                <select name="find">
+                  <option value="subject">제목</option>
+                  <option value="content">내용</option>
+                  <option value="name">이름</option>
+                </select>
+                <label for="search" class="hidden"></label>
+                <input type="text" name="search" id="search" placeholder="검색어를 입력하세요">
+                <button type="submit">검색</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </article>
+      <script src="./js/news.js"></script>
+      <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

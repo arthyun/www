@@ -1,0 +1,374 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 960px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 100px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+/* 본문 영역 */
+#content .fassionBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  align-items: center;
+}
+#content .fassionBox .boxTop ul {
+  display: flex;
+}
+#content .fassionBox .boxBottom ul {
+  display: flex;
+}
+/* 첫번째 이미지 */
+/* #content .fassionBox .boxTop .cover1 {
+  animation: background_size 1s 0.5s ease-in-out;
+} */
+#content .fassionBox .boxTop .cover1 a {
+  display: block;
+  background: url(../images/content4/content2_14.jpg) no-repeat;
+}
+#content .fassionBox .boxTop .cover1 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxTop .cover1 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxTop .cover1 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+#content .fassionBox .boxTop .cover1 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+/* 두번째 이미지 */
+#content .fassionBox .boxTop .cover2 a {
+  display: block;
+  background: url(../images/content4/content2_15.jpg) no-repeat;
+}
+#content .fassionBox .boxTop .cover2 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxTop .cover2 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxTop .cover2 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+#content .fassionBox .boxTop .cover2 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+/* 세번째 이미지 */
+#content .fassionBox .boxTop .cover3 a {
+  display: block;
+  background: url(../images/content4/content2_16.jpg) no-repeat;
+}
+#content .fassionBox .boxTop .cover3 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxTop .cover3 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxTop .cover3 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 90px 0 40px 0;
+}
+#content .fassionBox .boxTop .cover3 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+/* 네번째 이미지 */
+#content .fassionBox .boxBottom .cover4 a {
+  display: block;
+  background: url(../images/content4/content2_17.jpg) no-repeat;
+}
+#content .fassionBox .boxBottom .cover4 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxBottom .cover4 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxBottom .cover4 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+#content .fassionBox .boxBottom .cover4 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+/* 다섯번째 이미지 */
+#content .fassionBox .boxBottom .cover5 a {
+  display: block;
+  background: url(../images/content4/content2_18.jpg) no-repeat;
+}
+#content .fassionBox .boxBottom .cover5 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxBottom .cover5 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxBottom .cover5 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+#content .fassionBox .boxBottom .cover5 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+/* 여섯번째 이미지 */
+#content .fassionBox .boxBottom .cover6 a {
+  display: block;
+  background: url(../images/content4/content2_19.jpg) no-repeat;
+}
+#content .fassionBox .boxBottom .cover6 dl {
+  width: 666.66px;
+  height: 667px;
+  background: rgba(24, 46, 174, 0.6);
+  text-align: center;
+  padding: 150px 70px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+#content .fassionBox .boxBottom .cover6 dl:hover {
+  opacity: 1;
+}
+#content .fassionBox .boxBottom .cover6 dl dt {
+  font-size: 1.875em;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0;
+}
+#content .fassionBox .boxBottom .cover6 dl dd {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 2em;
+  color: #fff;
+}
+#content .fassionBox .boxBottom {
+  margin-bottom: 100px;
+}
+/* 안효섭, 배두나 */
+#content .fassionBox .blackBg {
+  margin: 100px 0;
+  background: url(../images/content4/content2_20.jpg) no-repeat;
+  width: 2000px;
+  height: 700px;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  perspective: 700px;
+}
+#content .fassionBox .blackBg p:nth-child(1) {
+  font-size: 5.625em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  width: 715px;
+  height: 175px;
+  line-height: 1.1em;
+  position: absolute;
+  left: 642.5px;
+  top: 41%;
+}
+#content .fassionBox .blackBg p:nth-child(2) {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.5em;
+  width: 380px;
+  height: 165px;
+  position: absolute;
+  left: 810px;
+  bottom: 3.5%;
+}
+
+/* scroll */
+.cover1, .cover2, .cover3, .cover4, .cover5, .cover6 {
+  position: relative;
+  opacity: 0;
+}
+/* sub2-4 scroll */
+.movefs1 {
+  animation: movefs1 1s forwards;
+}
+@keyframes movefs1 {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movefs2 {
+  animation: movefs2 2s forwards;
+}
+@keyframes movefs2 {
+  0%{
+    top: -200px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movefs3 {
+  animation: movefs3 3s forwards;
+}
+@keyframes movefs3 {
+  0%{
+    top: -300px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movefs4 {
+  animation: movefs4 2s forwards;
+}
+@keyframes movefs4 {
+  0%{
+    top: 100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movefs5 {
+  animation: movefs5 3s forwards;
+}
+@keyframes movefs5 {
+  0%{
+    top: 200px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movefs6 {
+  animation: movefs6 3s forwards;
+}
+@keyframes movefs6 {
+  0%{
+    top: 300px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.moveBG1 {
+  animation: moveBG1 1.5s forwards;
+}
+@keyframes moveBG1 {
+  0%{
+    transform: scaleZ(.5)scaleY(0)rotateZ(180deg);
+  }
+  30%{
+    transform: skew(0);
+  }
+  50%{
+    transform: skew(10deg);
+  }
+  70%{
+    transform: skew(-10deg);
+  }
+  100%{
+    transform: scaleZ(1)scaleY(1)rotateZ(0)skew(0);
+    opacity: 1;
+  }
+}

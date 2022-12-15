@@ -1,0 +1,197 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding-top: 25px;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+
+/* 본문 */
+#content .contentArea .intro {
+  margin-bottom: 50px;
+}
+#content .contentArea .topBg {
+  position: relative;
+  left: -400px;
+  width: 2000px;
+  /* height: 400px; */
+  margin: 50px 0;
+  background: url(../images/content3/content_08_1.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0;
+}
+#content .contentArea .mainBg {
+  height: 300px;
+  background: url(../images/content3/content_09.jpg) no-repeat;
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .box1 {
+  display: flex;
+  flex-direction: column;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  margin-bottom: 100px;
+  opacity: 0;
+}
+#content .contentArea .box1 li dl {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 0 20px 50px;
+  border-bottom: 1px solid #ccc;
+}
+#content .contentArea .box1 li:last-child dl {
+  border-bottom: none;
+}
+#content .contentArea .box1 li dl dt {
+  width: 280px;
+  font-size: 1.875em;
+  font-weight: 700;
+  padding-top: 10px;
+}
+#content .contentArea .box1 li dl dd {
+  font-size: 1.5em;
+}
+#content .contentArea .box1 li:nth-child(1) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(1) dl dt::before {
+  content: "STEP 01";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+#content .contentArea .box1 li:nth-child(2) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(2) dl dt::before {
+  content: "STEP 02";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+#content .contentArea .box1 li:nth-child(3) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(3) dl dt::before {
+  content: "STEP 03";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+#content .contentArea .box1 li:nth-child(4) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(4) dl dt::before {
+  content: "STEP 04";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+#content .contentArea .box1 li:nth-child(5) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(5) dl dt::before {
+  content: "STEP 05";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+#content .contentArea .box1 li:nth-child(5) dl dd {
+  padding-top: 15px;
+}
+#content .contentArea .box1 li:nth-child(6) dl dt {
+  padding-top: 4px;
+}
+#content .contentArea .box1 li:nth-child(6) dl dt::before {
+  content: "STEP 06";
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #182eae;
+}
+
+/* scroll */
+.moveTopBg {
+  animation: moveTopBg 1s forwards;
+}
+@keyframes moveTopBg {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 400px;
+    opacity: 1;
+  }
+}
+.moveMainBg {
+  animation: moveMainBg 1s forwards;
+}
+@keyframes moveMainBg {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+    opacity: 1;
+  }
+}
+.moveBigBox {
+  animation: moveBigBox 1.5s forwards;
+}
+@keyframes moveBigBox {
+  0%{
+    transform: scale(.5);
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}

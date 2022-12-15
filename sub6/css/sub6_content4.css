@@ -1,0 +1,76 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding-top: 25px;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+
+/* 본문 */
+.faq{width:1200px; font-size:12px; position:relative; margin-top: 165px; margin-bottom: 100px;}  
+.faq > span{display:block; position:absolute; right:15px; top: -70px;}  
+.faq > span .all{display: block; width: 100px; height: 50px; font-weight: 500; text-align: center; line-height: 50px; color:#0081cc; text-decoration:none; font-size: 20px;}  
+.faq ul{margin:0;padding:0;list-style:none;}  
+.faq ul li{margin-bottom: 20px;background: #f8f8f8; border-radius: 16px;}
+.faq .q{ padding-left: 100px; position: relative; font-weight: 500; font-size: 22px;}  
+.faq .q a.trigger{ border-radius: 16px; display:block; height:100px; background:#f8f8f8; color:#333;text-align:left;text-decoration:none; box-sizing: border-box;line-height: 100px;}  
+.faq .hide .q a.trigger{font-weight:normal;background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{color:#000} 
+.faq .q span{display: block; position: absolute; right: 30px; top:0;}
+.faq .q span i {font-size: 25px; color: #0081cc;}
+.faq .a{ margin:0;padding: 0 87px 45px 0; line-height:1.5; font-size: 18px; margin-bottom:10px; height:50px; padding-left: 100px; position: relative; display: none;} 
+.faq .q::before{content: 'Q'; color: #0081cc; display: block; position: absolute; left: 40px; top: 30px; font-size: 25px; font-weight: 700;}
+.faq .a::before{content: 'A'; color: #0081cc; display: block; position: absolute; left: 42px; top: -3px; font-size: 25px; font-weight: 700;}
+
+.faq ul li:nth-of-type(1) .a {padding-bottom: 20px;}
+.faq ul li:nth-of-type(3) .a {padding-bottom: 20px;}
+.faq ul li:nth-of-type(4) .a {padding-bottom: 20px;}
+.faq ul li:nth-of-type(6) .a {padding-bottom: 20px;}
+.faq ul li:nth-of-type(9) .a {padding-bottom: 20px;}
+
+#mailAddress {text-align: center; margin-bottom: 100px;}
+#mailAddress h3 {font-size: 2.5em; margin-bottom: 15px;}
+#mailAddress p {font-size: 1.5em; margin-bottom: 30px;}
+#mailAddress input {padding-left: 20px; margin: 1rem 0; height: 50px; font-size: 1.5em; border: 1px solid #0081cc; border-radius: 10px;}
+#mailAddress #uname {width: 100%;}
+#mailAddress #email {width: 100%;}
+#mailAddress #phone {width: 100%;}
+#mailAddress #message {padding: 20px 0 0 20px; width: 100%; font-size: 1.5em; border: 1px solid #0081cc; border-radius: 10px;}
+#mailAddress #submit {padding: 0; width: 100px; border: 0; background: #0081cc; color: #fff; transition: all .3s;}
+#mailAddress #submit:hover {background: #fff; color: #0081cc; border: 1px solid #0081cc;}

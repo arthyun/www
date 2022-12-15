@@ -1,0 +1,201 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub3.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(3) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 60px 12.5%;
+}
+
+/* content */
+#content .mindMain {
+    position: relative;
+}
+#content .mindMain .mind1 img {
+    width: 100%;
+    /* height: 150px;
+    object-fit: cover; */
+}
+#content .mindMain .mind1 p {
+    position: absolute;
+    left: 5%;
+    top: 6%;
+    font-size: 4.1vw;
+    font-weight: 500;
+    color: #182eae;
+    word-spacing: -1px;
+    letter-spacing: -1px;
+}
+/* @media screen and (min-width: 640px) {
+    #content .mindMain .mind1 img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+    #content .mindMain .mind1 p {
+        position: absolute;
+        left: 5%;
+        top: 8%;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: #182eae;
+    }
+} */
+
+#content .mindMain .mind2 ul li {
+    overflow: hidden;
+    margin: 40px 0;
+}
+#content .mindMain .mind2 ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#content .mindMain .mind2 img {
+    width: 33%;
+    margin-left: 5%;
+    float: left;
+}
+#content .mindMain .mind2 ul li:nth-child(1) h3 {
+    margin-left: 45%;
+    margin-bottom: 1%;
+    font-weight: 600;
+    font-size: 4.1vw;
+    color: #182eae;
+    margin-top: 12px;
+}
+#content .mindMain .mind2 ul li:nth-child(1) p {
+    margin-left: 45%;
+    font-size: 3.1vw;
+}
+/* @media screen and (min-width: 640px) {
+    #content .mindMain .mind2 img {
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-left: 5%;
+        float: left;
+    } 
+    #content .mindMain .mind2 ul li:nth-child(1) h3 {
+        margin: 0 0 1% 50%;
+        font-weight: 600;
+        font-size: 1.43em;
+        color: #182eae;
+        padding-top: 25px;
+    }
+    #content .mindMain .mind2 ul li:nth-child(1) p {
+        margin-left: 50%;
+        font-size: 1em;
+    }
+}*/
+
+#content .mindMain .mind2 ul li:nth-child(2) h3 {
+    margin-left: 45%;
+    margin-bottom: 1%;
+    font-weight: 600;
+    font-size: 4.1vw;
+    color: #182eae;
+    margin-top: 12px;
+}
+#content .mindMain .mind2 ul li:nth-child(2) p {
+    margin-left: 45%;
+    font-size: 3.1vw;
+}
+/* @media screen and (min-width: 640px) {
+    #content .mindMain .mind2 ul li:nth-child(2) h3 {
+        margin: 0 0 1% 50%;
+        font-weight: 600;
+        font-size: 1.43em;
+        color: #182eae;
+        padding-top: 25px;
+    }
+    #content .mindMain .mind2 ul li:nth-child(2) p {
+        margin-left: 50%;
+        font-size: 1em;
+    }
+} */
+
+#content .mindMain .mind2 ul li:nth-child(3) h3 {
+    margin-left: 45%;
+    margin-bottom: 1%;
+    font-weight: 600;
+    font-size: 4.1vw;
+    color: #182eae;
+    margin-top: 12px;
+}
+#content .mindMain .mind2 ul li:nth-child(3) p {
+    margin-left: 45%;
+    font-size: 3.1vw;
+}
+/* @media screen and (min-width: 640px) {
+    #content .mindMain .mind2 ul li:nth-child(3) h3 {
+        margin: 0 0 1% 50%;
+        font-weight: 600;
+        font-size: 1.43em;
+        color: #182eae;
+        padding-top: 25px;
+    }
+    #content .mindMain .mind2 ul li:nth-child(3) p {
+        margin-left: 50%;
+        font-size: 1em;
+    }
+} */

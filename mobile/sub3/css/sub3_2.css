@@ -1,0 +1,123 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub3.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(3) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 60px 12.5%;
+}
+
+/* content */
+#content .recruitAf_1,
+#content .recruitAf_2 {
+    padding: 0 12.5%;
+}
+#content .recruitAf_1{
+    padding-bottom: 30px;
+}
+#content .recruitAf_2{
+    padding-top: 30px;
+}
+#content .lineBlue {
+    display: block;
+    margin: 0 12.5%;
+    width: 75%;
+    height: 2px;
+    background: #182eae;
+}
+#content .recruitAf_1 span,
+#content .recruitAf_2 span {
+    display: block;
+    font-size: 1.575em;
+    font-weight: 700;
+    color: #fff;
+    -webkit-text-stroke: 1px #182eae;
+    margin-bottom: 15px;
+}
+#content .recruitAf_1 img,
+#content .recruitAf_2 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 640px) {
+    #content .recruitAf_1 img,
+    #content .recruitAf_2 img {
+    width: 80px;
+    height: 80px;
+}
+}
+#content .recruitAf_1 h3,
+#content .recruitAf_2 h3 {
+    font-weight: 700;
+    font-size: 1.143em;
+    margin-bottom: 10px;
+}
+#content .recruitAf_1 ul,
+#content .recruitAf_2 ul {
+    padding-left: 10%;
+}
+#content .recruitAf_1 ul li,
+#content .recruitAf_2 ul li {
+    list-style: disc;
+    padding: 2% 0;
+}

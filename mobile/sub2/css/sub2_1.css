@@ -1,0 +1,171 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub2.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(3) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 60px 12.5%;
+    position: relative;
+}
+#content .subTitle p::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/content1/comma1.png) 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 6%;
+    top: 13%;
+}
+#content .subTitle p::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/content1/comma2.png) 0 no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 7%;
+    bottom: 43%;
+}
+
+/* content */
+#content .kind1 {
+    width: 90%;
+    margin: 0 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+}
+#content .kind1 h3 {
+    font-size: 1.429em;
+    font-weight: 700;
+}
+#content .kind1 ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+#content .kind1 ul {
+    padding: 15px 0 0 6.5%;
+}
+
+#content .kind2 {
+    width: 90%;
+    margin: 40px 5% 0 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+}
+#content .kind2 h3 {
+    font-size: 1.429em;
+    font-weight: 700;
+}
+#content .kind2 ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+#content .kind2 ul {
+    padding: 15px 0 0 6.5%;
+}
+
+#content .kind3 {
+    width: 90%;
+    margin: 40px 5% 0 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+}
+#content .kind3 h3 {
+    font-size: 1.429em;
+    font-weight: 700;
+}
+#content .kind3 ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+#content .kind3 ul {
+    padding: 15px 0 0 6.5%;
+}
+
+#content .kind4 {
+    width: 90%;
+    margin: 40px 5% 0 5%;
+    padding: 5%;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+}
+#content .kind4 h3 {
+    font-size: 1.429em;
+    font-weight: 700;
+}
+#content .kind4 ul li {
+    list-style: disc;
+    margin-bottom: 10px;
+}
+#content .kind4 ul {
+    padding: 15px 0 0 6.5%;
+}

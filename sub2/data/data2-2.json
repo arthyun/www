@@ -1,0 +1,23 @@
+{
+"film":[
+    {
+        "stuff": "ASTROLL",
+        "para": "ASTROLL은 뛰어난 물리적, 화학적, 전기적 특성으로 광학용, 전자재료용, 각종 산업자재와 식품 포장용 등 여러 분야에서 사용되고 있으며 또한 편광판용, MLCC용, OCA용, 태양광용, DFR용 등 다양한 고부가가치 제품군에 널리 사용되고 있습니다. 또한 ASTROLL은 영국의 BSI로부터 ISO9002인증을 취득하였고 식품 포장용도에서 미국 FDA, 독일 BGA, 일본식품위생협회 규격에 합격했으며 전기적 안정성을 위해 UL 규격도 인증받았습니다.",
+        "route": "./images/content2/content2_05.jpg"
+    },
+    {
+        "stuff": "AMIDROLL",
+        "para": "국내최초로 국산화에 성공한 Nylon Film으로 식품 및 기타 포장제품의 소재로 널리 사용되고 있으며, 섬유제품 및 Book jacket 소재로도 널리 사용되고 있습니다. 뛰어난 충격강도와 모저항성으로 찢어짐이나 Pinhole이 생기지 않으며, O₂, N₂, CO₂ 등 기체에 대한 차단성이 우수하여 완벽한 식품 산화방지와 Retort용 식품 및 2차 전지에서 전해질을 담는 Cell Pouch 등 산업용 소재의 용도로도 사용 가능합니다.",
+        "route": "./images/content2/content2_06-1.jpg"
+    },
+    {
+        "stuff": "EVERRAY",
+        "para": " 프리즘 필름은 폴리에스터 필름에 미세한 프리즘 구조를 형성시켜 LCD BLU에서 광원으로부터의 빛을 집광시키는 기능을 하는 핵심 소재인데, EverRay LC 는 2005년 국내에서 2번째로 양산 및 국산화에 성공한 프리즘 필름이며, EverRay DCS는 2006년 세계 최초로 양산에 성공한 탄성을 가진 프리즘 필름입니다. EverRay BK, LF는 확산필름과 프리즘 필름의 기능을 동시에 수행하는 복합 프리즘 필름입니다.",
+        "route": "./images/content2/content2_07.jpg"
+    },
+    {
+        "stuff": "ACCUIMAGE",
+        "para": "세계적인 기업인 미국 Dupont, 일본 Hitachi, Asahi 등과 당당히 경쟁을 하여, 현재는 Dry Film PhotoResist 분야에서 국내 1위로써 M/S 60% 이상을 점유하고 있습니다. 또한 당사는 기존 외국 업체들이 장악했던 시장에서 국내 최초로 제품을 개발하여 산화시킨 공로와 최근에는 동 분야에서 최고의 기술력이 필요한 초고해상도용 Film을 개발하는 등 그 기술력을 입증 받았습니다.",
+        "route": "./images/content2/content2_08.jpg"
+    }]
+}

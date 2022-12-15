@@ -1,0 +1,223 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 960px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 100px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+/* 본문 영역 */
+#content .contentArea .filmBox {
+  display: flex;
+  flex-direction: column;
+}
+#content .contentArea .filmBox .film1 {
+  display: flex;
+}
+#content .contentArea .filmBox .film1 div {
+  padding: 35px 0 0 50px;
+  width: 550px;
+  box-sizing: border-box;
+}
+#content .contentArea .filmBox .film1 h3 {
+  font-size: 1.875em;
+  position: relative;
+}
+#content .contentArea .filmBox .film1 h3::after {
+  content: "폴리에스터";
+  display: block;
+  position: absolute;
+  bottom: -45%;
+  color: #999;
+  font-size: 20px;
+  font-weight: 400;
+}
+#content .contentArea .filmBox .film1 .img1 {
+  width: 650px;
+  overflow: hidden;
+  padding: 0;
+}
+#content .contentArea .filmBox .film1 p {
+  margin-top: 30px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#content .contentArea .filmBox .film1 img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .filmBox .film1 img:hover {
+  transform: scale(1.1);
+}
+#content .contentArea .filmBox .film2 {
+  display: flex;
+  margin: 100px 0;
+}
+#content .contentArea .filmBox .film2 div {
+  padding: 35px 50px 0 0;
+  width: 550px;
+  box-sizing: border-box;
+}
+#content .contentArea .filmBox .film2 h3 {
+  font-size: 1.875em;
+  position: relative;
+}
+#content .contentArea .filmBox .film2 h3::after {
+  content: "나일론";
+  display: block;
+  position: absolute;
+  bottom: -45%;
+  color: #999;
+  font-size: 20px;
+  font-weight: 400;
+}
+#content .contentArea .filmBox .film2 p {
+  margin-top: 30px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#content .contentArea .filmBox .film2 .img2 {
+  width: 650px;
+  overflow: hidden;
+  padding: 0;
+}
+#content .contentArea .filmBox .film2 img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .filmBox .film2 img:hover {
+  transform: scale(1.1);
+}
+#content .contentArea .filmBox .film3 {
+  display: flex;
+}
+#content .contentArea .filmBox .film3 div {
+  padding: 40px 0 0 50px;
+  width: 550px;
+  box-sizing: border-box;
+}
+#content .contentArea .filmBox .film3 h3 {
+  font-size: 1.875em;
+  position: relative;
+}
+#content .contentArea .filmBox .film3 h3::after {
+  content: "프리즘";
+  display: block;
+  position: absolute;
+  bottom: -45%;
+  color: #999;
+  font-size: 20px;
+  font-weight: 400;
+}
+#content .contentArea .filmBox .film3 p {
+  margin-top: 30px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#content .contentArea .filmBox .film3 .img3 {
+  width: 650px;
+  overflow: hidden;
+  padding: 0;
+}
+#content .contentArea .filmBox .film3 img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .filmBox .film3 img:hover {
+  transform: scale(1.1);
+}
+
+#content .contentArea .filmBox .film4 {
+  display: flex;
+  margin: 100px 0;
+}
+#content .contentArea .filmBox .film4 div {
+  padding: 50px 50px 0 0;
+  width: 550px;
+  box-sizing: border-box;
+}
+#content .contentArea .filmBox .film4 h3 {
+  font-size: 1.875em;
+  position: relative;
+}
+#content .contentArea .filmBox .film4 h3::after {
+  content: "드라이";
+  display: block;
+  position: absolute;
+  bottom: -45%;
+  color: #999;
+  font-size: 20px;
+  font-weight: 400;
+}
+#content .contentArea .filmBox .film4 p {
+  margin-top: 30px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+#content .contentArea .filmBox .film4 .img4 {
+  width: 650px;
+  overflow: hidden;
+  padding: 0;
+}
+#content .contentArea .filmBox .film4 img {
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .filmBox .film4 img:hover {
+  transform: scale(1.1);
+}
+
+/* scroll */
+#content .contentArea .filmBox .film1, .film2, .film3, .film4 {
+  opacity: 0;
+}
+/* scroll */
+.movefilm {
+  animation: movefilm 1.5s forwards;
+}
+@keyframes movefilm {
+  0%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

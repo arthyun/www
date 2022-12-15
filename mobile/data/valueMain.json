@@ -1,0 +1,28 @@
+{
+    "valueCont": [
+        {
+        "route": "./sub2/sub2_3.html",
+        "src": "./images/value01x2.jpg",
+        "alt": "핵심가치1",
+        "text": "새로운 생각"
+        },
+        {
+        "route": "./sub2/sub2_3.html",
+        "src": "./images/value02x2.jpg",
+        "alt": "핵심가치2",
+        "text": "당당한 자세"
+        },
+        {
+        "route": "./sub2/sub2_3.html",
+        "src": "./images/value03x2.jpg",
+        "alt": "핵심가치3",
+        "text": "뜨거운 열정"
+        },
+        {
+        "route": "./sub2/sub2_3.html",
+        "src": "./images/value04x2.jpg",
+        "alt": "핵심가치4",
+        "text": "완벽한 실행"
+        }
+    ]
+}

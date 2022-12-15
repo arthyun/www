@@ -1,0 +1,209 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub4.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(2) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 60px 12.5%;
+}
+
+/* content */
+
+#content .hongboMain {
+    width: 90%;
+    padding: 0 5%;
+}
+#content .hongboMain .hongboLists ul {
+    text-align: center;
+}
+#content .hongboMain .hongboLists ul li {
+    margin-bottom: 40px;
+}
+#content .hongboMain .hongboLists ul li a {
+    display: block;
+    position: relative;
+}
+#content .hongboMain .hongboLists ul li a span {
+    font-size: 5vw;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    width: 100%;
+}
+#content .hongboMain .hongboLists ul li:nth-child(1) a span {
+    bottom: 30%;
+}
+#content .hongboMain .hongboLists ul li:nth-child(3) a span {
+    bottom: 30%;
+    color: #333;
+}
+#content .hongboMain .hongboLists ul li:nth-child(5) a span {
+    bottom: 30%;
+}
+#content .hongboMain .hongboLists ul li a strong {
+    color: #182eae;
+}
+#content .hongboMain .hongboLists ul li a p {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 4.38vw;
+}
+#content .hongboMain .hongboLists ul li a .imgBox img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgb(0 0 0 / 10%);
+}
+/* @media screen and (min-width: 640px) {
+    #content .hongboMain .hongboLists ul li a .imgBox img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        box-shadow: 20px 20px 50px rgb(0 0 0 / 10%);
+    }
+} */
+
+/* modal popup */
+#content .modalBg1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1000;
+}
+#content .modalBg2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1100;
+}
+#content .modalBg3 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1200;
+}
+#content .modalBg4 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1300;
+}
+#content .modalBg5 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.7);
+    z-index: 1350;
+}
+#content .modalBg1 .video-container,
+#content .modalBg2 .video-container,
+#content .modalBg3 .video-container,
+#content .modalBg4 .video-container,
+#content .modalBg5 .video-container {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    /* overflow: hidden; */
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    margin: 0 5%;
+}
+#content .modalBg1 .video-container .closeBtn,
+#content .modalBg2 .video-container .closeBtn,
+#content .modalBg3 .video-container .closeBtn,
+#content .modalBg4 .video-container .closeBtn,
+#content .modalBg5 .video-container .closeBtn {
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: -35px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.146em;
+    z-index: 1400;
+}

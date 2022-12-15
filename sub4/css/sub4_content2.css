@@ -1,0 +1,138 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 0 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #182eae;
+}
+/* 본문 영역 */
+#content .contentArea .mainBg {
+  width: 2000px;
+  height: 450px;
+  position: relative;
+  left: -400px;
+  background: url(../images/content2/content_03_3.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 50px 0;
+  opacity: 0;
+}
+#content .contentArea .part1 h3 {
+  font-size: 1.875em;
+  margin-bottom: 25px;
+}
+#content .contentArea .part1 p {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  text-align: justify;
+  margin-bottom: 50px;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .part1 h3:nth-of-type(1)::after {
+  content: "Individual Excellence";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+#content .contentArea .part1 h3:nth-of-type(2)::after {
+  content: "Uniqueness";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+#content .contentArea .part1 h3:nth-of-type(3)::after {
+  content: "First Choice of Customers";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+#content .contentArea .part1 h3:nth-of-type(4)::after {
+  content: "Fair Trade and Competition";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+#content .contentArea .part1 h3:nth-of-type(5)::after {
+  content: "Creating a Healthy Organizational Culture";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+#content .contentArea .part1 h3:nth-of-type(6)::after {
+  content: "Protection of Company Assets";
+  color: #0081cc;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin-left: 15px;
+}
+/* scroll */
+.moveMainBg {
+  animation: moveMainBg 1s forwards;
+}
+@keyframes moveMainBg {
+  0%{
+    top: 100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movePart {
+  animation: movePart 1.5s forwards;
+}
+@keyframes movePart {
+  0%{
+    top: 100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}

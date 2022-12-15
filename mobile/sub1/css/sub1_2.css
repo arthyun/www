@@ -1,0 +1,212 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub1.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(4) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 70%;
+    padding: 20px 15% 60px 15%;
+}
+
+/* content */
+#content .film1Main {
+    width: 100%;
+}
+#content .film1Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .film1Main h3::before {
+    content: '폴리에스터';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -47%;
+    left: 5%;
+}
+#content .film1Main .film1Inner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .film1Main .film1Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .film1Main .film1Inner p {
+    width: 90%;
+    padding: 15px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .film2Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .film2Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .film2Main h3::before {
+    content: '나일론';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -47%;
+    left: 5%;
+}
+#content .film2Main .film2Inner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .film2Main .film2Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .film2Main .film2Inner p {
+    width: 90%;
+    padding: 15px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .film3Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .film3Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .film3Main h3::before {
+    content: '프리즘';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -47%;
+    left: 5%;
+}
+#content .film3Main .film3Inner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .film3Main .film3Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .film3Main .film3Inner p {
+    width: 90%;
+    padding: 15px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .film4Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .film4Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .film4Main h3::before {
+    content: '드라이';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -47%;
+    left: 5%;
+}
+#content .film4Main .film4Inner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .film4Main .film4Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .film4Main .film4Inner p {
+    width: 90%;
+    padding: 15px 5% 0 5%;
+    word-spacing: -1px;
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>LEON</title>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./common/images/favicon.png"
+   >
+    <link rel="apple-touch-icon-precomposed" href="./app_icon.png">
+    <link rel="apple-touch-startup-image" href="./startup.png">
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./maincss/main.css">
+    <script src="./common/js/prefixfree.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/bc0f1996aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // <![CDATA[
+      try {
+        window.addEventListener(
+          "load",
+          function () {
+            setTimeout(scrollTo, 0, 0, 1);
+          },
+          false
+        );
+      } catch (e) {}
+      // ]]>
+    </script>
+  </head>
+
+  <body>
+    <div id="skipNav">
+      <a href="#content">본문바로가기</a>
+      <a href="#gnb">네비게이션바로가기</a>
+    </div>
+
+    <div id="wrap">
+      <div class="videoBox">
+        <video autoplay loop muted id="videoBG"></video>
+        <img src="./images/mobile_change.jpg" id="imgBG" alt="">
+
+        <a class="down" href="#"> </a>
+        <div class="loading">
+          <span></span>
+          <!--1. span은 하나의 원이다. -->
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <header id="headerArea">
+        <div class="headerInner">
+          <h1><a href="./index.html">LEON</a></h1>
+          <a class="gnbOpenBtn" href="#">
+            <span>열기</span>
+          </a>
+          <nav id="gnb">
+            <h2 class="hidden">네비게이션영역</h2>
+            <ul>
+              <li>
+                <h3><a href="./sub1/sub1.html">Plot</a></h3>
+              </li>
+              <li>
+                <h3><a href="./sub2/sub2.html">Cast</a></h3>
+              </li>
+              <li>
+                <h3><a href="./sub3/sub3.html">Trailer</a></h3>
+              </li>
+              <li>
+                <h3><a href="./sub4/sub4.html">Gallery</a></h3>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <article id="content">
+        <h2 class="hidden">본문콘텐츠영역</h2>
+
+        <section class="plotMain">
+          <ul class="plotCont box-wrap">
+            <li class="box">
+              <a href="./sub1/sub1.html">
+                  <img src="./images/plot01.png" alt="">
+              </a>
+            </li>
+            <li class="box">
+              <a href="./sub1/sub1.html">
+                  <img src="./images/plot02.png" alt="">
+              </a>
+            </li>
+            <li class="box">
+              <a href="./sub1/sub1.html">
+                  <img src="./images/plot03.png" alt="">
+              </a>
+            </li>
+          </ul>
+          <div class="plotRight">
+            <h3>Plot <span></span></h3>
+            <div class="plotPara">
+              <p>
+                Léon is an Italian hitman (or "cleaner", as he refers to
+                himself) in the New York City neighborhood of Little Italy
+                working for a mafioso named "Old Tony".
+              </p>
+              <p>
+                One day, Léon meets Mathilda Lando, a lonely twelve-year-old who
+                lives with her dysfunctional family in an apartment down the
+                hall from Léon, and has stopped attending class at her school
+                for troubled girls.
+              </p>
+              <p>
+                During the raid, Stansfield murders Mathilda's family while she
+                is out shopping for groceries. When she returns, Mathilda
+                realizes what has happened just in time to continue down the
+                hall to Léon's apartment; he hesitantly gives her shelter.
+              </p>
+              <p>
+                In the chaos, a wounded Léon sneaks out of the building
+                disguised as a wounded ESU officer. He goes unnoticed by
+                everyone except Stansfield, who follows him and shoots him in
+                the back.
+              </p>
+            </div>
+            <a class="plotMore" href="./sub1/sub1.html">More</a>
+          </div>
+          <span class="plotBg"></span>
+        </section>
+
+        <section class="musicMain">
+          <div class="musicLeft">
+            <h3><span></span> Music</h3>
+            <div class="musicPara">
+              <p>
+                "Shape of My Heart" is a song by British musician Sting. It was
+                released in August 1993 as the fifth single from the album Ten
+                Summoner's Tales. The song was co-written by guitarist Dominic
+                Miller. It was used for the end credits of the film Léon
+                starring Jean Reno, Gary Oldman and Natalie Portman, and within
+                the 1993 film Three of Hearts.
+              </p>
+              <p>
+                Despite failing to reach the top 50 in the UK upon its release,
+                it has become a pop classic and one of Sting's works most
+                closely associated with his solo career. It currently has more
+                than 220 million plays on the streaming platform Spotify.
+              </p>
+              <p>
+                Larry Adler played the harmonica section in the song. The song
+                was sampled in many songs over the years, most notably on
+                "Shape" (2003) by Sugababes, "Rise & Fall" (2003) by Craig
+                David, The Message (1996) by Nas, and also Sting himself.
+              </p>
+              <p>
+                The song's guitar riff was also interpolated by Juice WRLD on
+                the worldwide hit "Lucid Dreams" (2018) and on "You’re Mines
+                Still" (2020) by rapper BLEU.
+              </p>
+            </div>
+          </div>
+          <div class="musicRight">
+            <strong>Shape of My Heart - Sting</strong>
+              <figure>
+                <img class="cd" src="./images/shapeofmyheart.png" alt="">
+              </figure>
+            <a class="playBtn" href="#">Play</a>
+            <span class="playText">Click the play button!</span>
+            <audio id="testAudio">
+              <source
+                src="./images/ShapeOfMyHeart.mp3"
+                type="audio/mp3"
+             >
+            </audio>
+          </div>
+        </section>
+
+        <section class="normanMain">
+          <h3>Who is Norman?</h3>
+          <div>
+            <p>
+              That slack-jawed, tilted-eyebrow expression. The periodic and
+              visceral, almost wet sounding neck cracking. The unexplained
+              green-and-yellow pills. The tan suit. The shaking, fidgeting,
+              spasming, groaning Gary Oldman plays an unbelievable character in
+              Big, Bad Norman Stansfield.
+            </p>
+          </div>
+        </section>
+
+        <section class="castMain">
+          <h3><span></span> Cast</h3>
+          <div class="gridBox">
+            <ul>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast01.png" alt="">
+                  <p>
+                    Jean Reno
+                    <br>
+                    <span>Casting Leon</span>
+                  </p>
+                </a>
+              </li>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast04.png" alt="">
+                  <p>
+                    Michael Badalucco
+                    <br>
+                    <span>Casting Mathilda’s Dad</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast02.png" alt="">
+                  <p>
+                    Natalie Portman
+                    <br>
+                    <span>Casting Mathilda</span>
+                  </p>
+                </a>
+              </li>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast05.png" alt="">
+                  <p>
+                    Danny Aiello
+                    <br>
+                    <span>Casting Leon's Client</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast03.png" alt="">
+                  <p>
+                    Gary Oldman
+                    <br>
+                    <span>Casting Norman Stansfield</span>
+                  </p>
+                </a>
+              </li>
+              <li class="artist-card">
+                <a href="#">
+                  <img class="artist-card__img" src="./images/cast06.png" alt="">
+                  <p>
+                    Samy Naceri
+                    <br>
+                    <span>Casting Police Officer</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="castMore" href="./sub2/sub2.html">More</a>
+        </section>
+
+        <section class="trailerMain">
+          <h3>Trailer <span></span></h3>
+          <div class="trailerInner">
+            <div class="moviePart">
+              <a href="#">
+                <!-- <img src="./images/trailer01.png" alt=""> -->
+              </a>
+            </div>
+            <div class="trailerIntro">
+              <p>Leon the Professional</p>
+              <p>Trailer #1</p>
+              <p>
+                Trailer for Luc Besson's film starring Jean Reno, Gary Oldman,
+                Natalie Portman, Danny Aiello, Michael Badalucco, Peter Appel,
+                Ellen Greene, Frank Senger...
+              </p>
+              <div class="trailerBtn">
+                <a class="leftBtn" href="#">Left</a>
+                <a class="RightBtn" href="#">Right</a>
+              </div>
+            </div>
+          </div>
+          <div class="trailerLists">
+            <ul>
+              <li>
+                <a href="./sub3/sub3.html"></a>
+              </li>
+              <li>
+                <a href="./sub3/sub3.html"></a>
+              </li>
+              <li>
+                <a href="./sub3/sub3.html"></a>
+              </li>
+            </ul>
+          </div>
+          <a class="trailerMore" href="./sub3/sub3.html">More</a>
+        </section>
+
+        <section class="galleryMain">
+          <h3>Gallery</h3>
+          <a class="galleryMore" href="./sub4/sub4.html">More</a>
+          <div class="gridGallery">
+            <ul class="gallery01">
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery01.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery02.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery03.png" alt="">
+                </a>
+              </li>
+            </ul>
+            <ul class="gallery02">
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery04.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery05.png" alt="">
+                </a>
+              </li>
+            </ul>
+            <ul class="gallery03">
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery06.png" alt="">
+                </a>
+              </li>
+              <li>
+                <a href="./sub4/sub4.html">
+                  <img src="./images/gallery07.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+
+      <footer id="footerArea">
+        <p>&copy; Columbia Pictures Industries, Inc. / 1994</p>
+        <div class="footerRight">
+          <a class="facebookBtn" href="https://www.facebook.com/LeonTheProfessionalMovie/"
+            ><span class="hidden">FaceBook바로가기</span
+            ><i class="fa-brands fa-facebook-f" style="color: #fff"></i
+          ></a>
+          <a class="blogBtn" href="https://them0vieblog.com/2012/02/14/non-review-review-leon-the-professional/"
+            ><span class="hidden">Blog바로가기</span
+            ><i class="fa-solid fa-rss" style="color: #fff"></i
+          ></a>
+          <a class="youtubeBtn" href="https://www.youtube.com/watch?v=rGLoyxKW3JY"
+            ><span class="hidden">Youtube바로가기</span
+            ><i class="fa-brands fa-youtube" style="color: #fff"></i
+          ></a>
+        </div>
+        <a class="topMove" href="#">TOP<span></span></a>
+      </footer>
+    </div>
+    <script src="./common/js/jquery-1.12.4.min.js"></script>
+    <script src="./common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./common/js/common.js"></script>
+    <script src="./mainjs/main.js"></script>
+    <!-- <script src="./mainjs/ajax.js"></script> -->
+  </body>
+</html>

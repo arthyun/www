@@ -1,0 +1,282 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>홍보센터-공지사항</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="shortcut icon" href="../common/images/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./common/css/sub6common.css" >
+    <link rel="stylesheet" href="./css/sub6_content3.css" >
+    <script src="https://kit.fontawesome.com/bc0f1996aa.js" crossorigin="anonymous"></script>
+  </head>
+
+  <?
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);
+
+    include "../lib/dbconn.php"; //DB 접속
+
+    if(!$scale){
+      $scale = 8; // 한 화면에 표시되는 글 수
+    }
+
+    if ($mode == "search"){ //검색모드 - list.php?mode=search
+      if(!$search){
+        echo "<script>
+            window.alert('검색할 단어를 입력해 주세요.');
+            history.go(-1);
+            </script>";
+          exit;
+        }
+        $sql = "select * from greet where $find like '%$search%' order by num desc";
+      } else {
+        $sql = "select * from greet order by num desc";
+      }
+    $result = mysql_query($sql);
+    $total_record = mysql_num_rows($result); // 전체 레코드 수
+
+    // 전체 페이지 수($total_page) 계산 
+    if($total_record % $scale == 0){ // scale에 맞는 배수 구하기
+      $total_page = floor($total_record / $scale);      
+    } else {
+      $total_page = floor($total_record / $scale) + 1; //페이지번호가 3.5인 애들을 4로 만들기 위함 안떨어지는 애들을
+    }
+
+    if (!$page){  // 페이지번호($page)가 안넘어올 때
+      $page = 1; // 페이지번호를 1로 초기화
+    }
+    // 표시할 페이지($page)에 따라 $start 계산
+    $start = ($page - 1) * $scale; // 게시글 레코드 시작번호
+    $number = $total_record - $start; // 일련번호로 사용됨
+?>
+
+  <body>
+    <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="./common/images/company_info_main6-2.jpg" alt="사업분야메인" >
+        <h3>홍보센터</h3>
+      </div>
+
+      <div class="subNav">
+        <ul>
+          <li><a href="./sub6_1.html">뉴스룸</a></li>
+          <li><a href="./sub6_2.html">미디어센터</a></li>
+          <li class="current"><a href="./sub6_3.html">공지사항</a></li>
+          <li><a href="./sub6_4.html">FAQ & 문의하기</a></li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span
+              ><a href="../index.html"><i class="fa-solid fa-house"></i></a
+            ></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_1.html">홍보센터</a></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_3.html">공지사항</a></span>
+          </div>
+          <h2>공지사항</h2>
+        </div>
+
+        <div class="contentArea">
+          <!-- 본문 컨텐츠영역 -->
+          <p class="intro"><span class="blue">코오롱 인더스트리</span>의 주요 이슈 및 공지사항을 알려드립니다.</p>
+        
+        <div class="com_wrap">
+          <div class="com_sort">
+            <div class="total">총 <strong><?=$total_record ?></strong> 개의 게시물이 있습니다.</div>
+            <ul class="list_style">
+              <li class="active"><a href="#">목록형</a></li>
+              <li><a href="#">박스형</a></li>
+            </ul>
+            <select id="scale" class="scale" name="scale" onchange="location.href='sub6_3.html?scale='+this.value">
+            <option value="">보기</option>
+              <option value="8">8개씩</option>
+              <option value="10">10개씩</option>
+              <option value="12">12개씩</option>
+              <option value="14">14개씩</option>
+            </select>
+          </div>
+
+          <div class="com_list">
+            <ul class="list_title">
+              <li class="title1">번호</li>
+              <li class="title2">제목</li>
+              <li class="title3">글쓴이</li>
+              <li class="title4">등록일</li>
+              <li class="title5">조회</li>
+            </ul>
+
+            <ul class="list_cont">
+            <?		
+              for ($i = $start; $i < $start + $scale && $i < $total_record; $i++){
+                  mysql_data_seek($result, $i); // 가져올 레코드로 위치(포인터) 이동  
+
+                $row = mysql_fetch_array($result); // 하나의 레코드 가져오기
+                $item_num = $row[num];
+                $item_id = $row[id];
+                $item_name = $row[name];
+                $item_nick = $row[nick];
+                $item_hit = $row[hit];
+                $item_date = $row[regist_day];
+                $item_date = substr($item_date, 0, 10); //날짜시간을 원하는 길이에 맞게 나오게 하기 위함
+                $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
+              ?>
+              <li>
+                <div class="title1">
+                  <?=$number ?>
+                </div>
+                <div class="title2">
+                  <a href="view2.php?num=<?=$item_num ?>&page=<?=$page ?>&scale=<?=$scale ?>">
+                    <?=$item_subject ?>
+                  </a>
+                </div>
+                <div class="title3">
+                  <?=$item_nick ?>
+                </div>
+                <div class="title4">
+                  <?=$item_date ?>
+                </div>
+                <div class="title5">
+                  <?=$item_hit ?>
+                </div>
+              </li>
+              <?
+                  $number--;
+                }
+              ?>
+              <!-- <li>
+                <div class="title1">24</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리7</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">50</div>
+              </li>
+              <li>
+                <div class="title1">23</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리6</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">40</div>
+              </li>
+              <li>
+                <div class="title1">22</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리5</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">30</div>
+              </li>
+              <li>
+                <div class="title1">21</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리4</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">10</div>
+              </li>
+              <li>
+                <div class="title1">20</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리3</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">9</div>
+              </li>
+              <li>
+                <div class="title1">19</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리2</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">8</div>
+              </li>
+              <li>
+                <div class="title1">18</div>
+                <div class="title2">
+                  <a href="#">코오롱 인더스트리1</a>
+                  <div class="content"></div>
+                </div>
+                <div class="title3">사용자</div>
+                <div class="title4">2022-09-17</div>
+                <div class="title5">7</div>
+              </li> -->
+            </ul>
+          </div>
+          
+          <div class="page_num">
+            <span class="prev">이전</span>
+            <?
+              //게시판 목록 하단에 페이지 링크 번호 출력
+              for ($i = 1; $i <= $total_page; $i++){
+                if ($page == $i){  //현재 페이지 번호 링크 안함
+                  echo "<span class='active'>$i</span>";
+                } else { 
+                  echo "<span><a href='sub6_3.html?page=$i&scale=$scale'>$i</a></span>";
+                }
+              }
+            ?>	
+            <span class="next">다음</span>
+          </div>
+          <? 
+            if($userid) {
+          ?>
+          <script>
+            window.onload = function(){
+            var btnWrap = document.querySelector('.btn_wrap');
+            btnWrap.style.display = 'inline-block';
+          }
+          </script>
+          <div class="btn_wrap2">
+            <a href="write_form2.php?page=<?=$page ?>&scale=<?=$scale ?>">글쓰기</a>
+          </div>
+          <?
+            }
+          ?>
+          <div class="btn_wrap">
+            <a href="sub6_3.html?page=<?=$page ?>&scale=<?=$scale ?>">목록</a>
+          </div>
+
+          <div class="com_search">
+            <form name="board_form" action="sub6_3.html?mode=search" method="post">
+              <select name="find">
+                <option value="subject">제목</option>
+                <option value="content">내용</option>
+                <option value="nick">별명</option>
+                <option value="name">이름</option>
+              </select>
+              <label for="search" class="hidden"></label>
+              <input type="text" name="search" id="search" placeholder="검색어를 입력하세요">
+              <button type="submit">검색</button>
+            </form>
+          </div>
+        </div>
+        </div>
+      </article>
+
+      <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

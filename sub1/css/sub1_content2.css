@@ -1,0 +1,181 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 895px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 270px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+#content .ceoInterview {
+  width: 2000px;
+  height: 770px;
+  background: #f5f5f5;
+  position: relative;
+  left: 50%;
+  margin-left: -1000px;
+  margin-bottom: 120px;
+  opacity: 0;
+}
+#content .ceoInterview0 {
+  display: flex;
+  justify-content: center;
+}
+#content .ceoInterview0 .ceoInterview1 {
+  width: 480px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+}
+#content .ceoInterview0 .ceoInterview2 {
+  width: 720px;
+  padding: 0 30px 0 120px;
+  box-sizing: border-box;
+  position: relative;
+  opacity: 0;
+}
+#content .ceoInterview0 .ceoInterview1 img {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: -25%;
+  transition: all 0.3s ease-out;
+}
+#content .ceoInterview0 .ceoInterview1 img:hover {
+  filter: drop-shadow(-10px 0 20px rgba(0, 0, 0, 0.1));
+}
+#content .ceoInterview0 .ceoInterview1 .career {
+  width: 450px;
+  height: 450px;
+  background: #fff;
+  position: absolute;
+  left: 30px;
+  bottom: -0%;
+  padding: 0 40px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-out;
+}
+#content .ceoInterview0 .ceoInterview1 .career:hover {
+  box-shadow: -10px 30px 50px rgba(0, 0, 0, 0.1);
+}
+#content .ceoInterview0 .ceoInterview1 .career dl:nth-of-type(1) {
+  margin-top: 40px;
+}
+#content .ceoInterview0 .ceoInterview1 .career dl:nth-of-type(2) {
+  margin-top: 40px;
+}
+#content .ceoInterview0 .ceoInterview1 .career dt {
+  color: #0081cc;
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#content .ceoInterview0 .ceoInterview1 .career span {
+  display: inline-block;
+  width: 100px;
+  font-weight: 500;
+  margin: 10px 0 10px 0;
+}
+#content .ceoInterview0 .ceoInterview2 img {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: -10%;
+}
+#content .ceoInterview0 .ceoInterview2 p {
+  font-size: 1.125em;
+  line-height: 2em;
+  margin: 30px 0;
+  text-align: justify;
+}
+#content .ceoInterview0 .ceoInterview2 p span {
+  position: relative;
+  display: inline-block;
+  text-indent: -9999px;
+  color: #fff;
+}
+#content .ceoInterview0 .ceoInterview2 p span::after {
+  content: "";
+  display: block;
+  width: 208px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  bottom: -30%;
+  background: url(../images/content2/img-ceo-sign.png) no-repeat;
+  margin-left: 20px;
+}
+
+/* sub1_2 scroll */
+.sub1_2_on_1 {
+  animation: sub1_2_on_1 1s forwards;
+}
+@keyframes sub1_2_on_1 {
+  from{
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.sub1_2_on_2 {
+  animation: sub1_2_on_2 1.5s forwards;
+}
+@keyframes sub1_2_on_2 {
+  from{
+    left: -100px;
+    top: 300px;
+  }
+  to{
+    left: 0;
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.sub1_2_on_3 {
+  animation: sub1_2_on_3 1.5s forwards;
+}
+@keyframes sub1_2_on_3 {
+  from{
+    right: -100px;
+    top: -200px;
+  }
+  to{
+    right: 0;
+    top: 0;
+    opacity: 1;
+  }
+}

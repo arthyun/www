@@ -1,0 +1,175 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding-top: 25px;
+  font-size: 1.5em;
+  text-align: center;
+  position: relative;
+  padding-bottom: 60px;
+}
+#content .blue {
+  color: #0081cc;
+}
+
+/* 본문 */
+#content .intro::before {
+  content: "";
+  display: block;
+  width: 39px;
+  height: 35px;
+  background: url(../images/content1/content_01.png) no-repeat;
+  position: absolute;
+  left: 25.5%;
+  top: 11%;
+}
+#content .intro::after {
+  content: "";
+  display: block;
+  width: 39px;
+  height: 36px;
+  background: url(../images/content1/content_02.png) no-repeat;
+  position: absolute;
+  right: 24.5%;
+  bottom: 30%;
+}
+#content .contentArea h3 {
+  width: 260px;
+  float: left;
+  box-sizing: border-box;
+  font-size: 1.875em;
+  text-align: center;
+  box-sizing: border-box;
+}
+#content .contentArea .content1 h3 {
+  padding: 90px 25px;
+}
+#content .contentArea .content2 h3 {
+  padding: 105px 25px;
+}
+#content .contentArea .content3 h3 {
+  padding: 75px 25px;
+}
+#content .contentArea .content4 h3 {
+  padding: 105px 25px;
+}
+#content .contentArea ul {
+  width: 940px;
+  float: right;
+  background: #f5f5f5;
+  list-style: disc;
+  box-sizing: border-box;
+}
+#content .contentArea .content1 ul {
+  padding: 50px 80px 50px 90px;
+}
+#content .contentArea .content2 ul {
+  padding: 50px 55px 50px 90px;
+}
+#content .contentArea .content3 ul {
+  padding: 50px 80px 50px 90px;
+}
+#content .contentArea .content4 ul {
+  padding: 50px 80px 50px 90px;
+}
+
+#content .contentArea ul li {
+  font-size: 1.125em;
+  line-height: 1.7em;
+}
+#content .contentArea .content1,
+.content2,
+.content3,
+.content4 {
+  margin: 100px 0;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .content1::after,
+.content2::after,
+.content3::after,
+.content4::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* scroll */
+.moveCont1 {
+  animation: moveCont1 1.5s forwards;
+}
+@keyframes moveCont1 {
+  0%{
+    left: -200px;
+  }
+  100%{
+    left: 0;
+    opacity: 1;
+  }
+}
+.moveCont2 {
+  animation: moveCont2 1.5s forwards;
+}
+@keyframes moveCont2 {
+  0%{
+    right: -200px;
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}
+.moveCont3 {
+  animation: moveCont3 1.5s forwards;
+}
+@keyframes moveCont3 {
+  0%{
+    left: -200px;
+  }
+  100%{
+    left: 0;
+    opacity: 1;
+  }
+}
+.moveCont4 {
+  animation: moveCont4 1.5s forwards;
+}
+@keyframes moveCont4 {
+  0%{
+    right: -200px;
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}

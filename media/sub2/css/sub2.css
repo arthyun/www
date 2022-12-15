@@ -1,0 +1,818 @@
+.videoBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+#imgBG {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  object-fit: cover;
+}
+.down {
+  display: block;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 10%;
+  font-weight: 500;
+  animation: ani 1s infinite alternate;
+}
+
+@keyframes ani {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.7;
+    color: #fff;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    color: #888;
+  }
+}
+
+.down::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 20px 0 0 55px;
+  background: url(../../images/scrollDownBtn.png) center center no-repeat;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  z-index: 20;
+  transform: translateX(-30%);
+}
+.loading span {
+  display: block; /* span 내부요소들을 한줄로 세우기 */
+  width: 8px;
+  height: 8px;
+  background-color: gray;
+  border-radius: 50%; /* span을 동그랗게 */
+  animation: loading 1s 0s linear infinite;
+  /* 이벤트명  반복시간  딜레이시간  이벤트처리부드럽게  이벤트무한반복*/
+  margin-bottom: 5px;
+}
+.loading span:nth-child(1) {
+  /*loading의 자식 중 첫번째 span*/
+  /*nth-child : 형제 사이에서의 순서*/
+  animation-delay: 0s;
+  background-color: #fff;
+}
+.loading span:nth-child(2) {
+  animation-delay: 0.2s;
+  background-color: #fff;
+}
+.loading span:nth-child(3) {
+  animation-delay: 0.4s;
+  background-color: #fff;
+}
+@keyframes loading {
+  /*loading이라는 keyframe 애니메이션*/
+  0%,
+  100% {
+    /* 0, 50, 100은 구간*/
+    opacity: 0; /* 안보였다가 */
+    transform: scale(
+      0.5
+    ); /*transform의 scale로 요소를 확대 또는 축소할 수 있음*/
+  }
+  50% {
+    opacity: 1; /* 보였다가 */
+    transform: scale(1.2); /* 1.2배 */
+  }
+}
+
+/* text effect */
+.deconstructed {
+  position: absolute;
+  margin: 0 auto;
+  color: transparent;
+  font-family: "Helvetica", sans-serif;
+  font-size: 10rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: -200%;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    #8d2626 0,
+    #f3d25d 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #fde306 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  pointer-events: none;
+}
+
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 5s infinite;
+}
+
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(
+    transparent 25%,
+    black 25%,
+    black 50%,
+    transparent 50%
+  );
+  mask-image: linear-gradient(
+    transparent 25%,
+    black 25%,
+    black 50%,
+    transparent 50%
+  );
+  animation: deconstructed2 5s infinite;
+}
+
+.deconstructed > div:nth-child(3) {
+  -webkit-mask-image: linear-gradient(
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%
+  );
+  mask-image: linear-gradient(
+    transparent 50%,
+    black 50%,
+    black 75%,
+    transparent 75%
+  );
+  animation: deconstructed3 5s infinite;
+}
+
+.deconstructed > div:nth-child(4) {
+  -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s infinite;
+}
+
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+  83% {
+    transform: translateX(-0.1%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+  82% {
+    transform: translateX(-0.2%);
+  }
+  100% {
+    transform: translateX(-125%);
+  }
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+  81% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-130%);
+  }
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-135%);
+  }
+}
+
+#content {
+  width: 100%;
+}
+#content .castCont {
+  padding: 5%;
+  background: rgba(0, 0, 0,.8);
+  text-align: center;
+  position: relative;
+}
+#content .castCont::after {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 300px;
+  background: url(../images/cast_bg.png) 50% 50% no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 2%;
+  bottom: 9%;
+}
+#content .castCont h3 {
+  color: #fde306;
+  font-size: 2.7777rem;
+}
+#content .castCont .castPara {
+  width: 80%;
+  margin: 0 auto;
+  text-align: start;
+}
+#content .castCont .castPara p {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 1.5rem 0;
+}
+/* Leon */
+#content .castLeon {
+  padding: 5% 10%;
+  background: rgba(113,0,0,.8);
+  position: relative;
+  overflow: hidden;
+}
+#content .castLeon .castLeonInner {
+  width: 47%;
+  padding-top: 3%;
+  float: left;
+}
+#content .castLeon .castLeonInner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#content .castLeon .castLeonInner h3 {
+  color: #fde306;
+  font-size: 2.7777rem;
+}
+#content .castLeon .castLeonInner p:nth-of-type(1){
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#content .castLeon .castLeonInner p:nth-of-type(2){
+  height: 100px;
+  overflow-y: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#content .castLeon .castLeonInner p {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 1.5rem 0;
+}
+#content .castLeon ul {
+  width: 45%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  float: right;
+}
+#content .castLeon ul li {
+  overflow: hidden;
+}
+#content .castLeon ul li a {
+  display: block;
+}
+#content .castLeon ul li a img {
+  width: 100%;
+  transition: all .3s;
+  transform: scale(1.3);
+}
+#content .castLeon ul li a img:hover {
+  transform: scale(1.1);
+}
+#content .castLeon ul li:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+#content .castLeon ul li:nth-of-type(2) {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+#content .castLeon ul li:nth-of-type(3) {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+#content .castLeon ul li:nth-of-type(4) {
+  grid-row: 2;
+  grid-column: 3/4;
+}
+/* Matilda */
+#content .castMatilda {
+  padding: 5% 10%;
+  background: rgba(0,0,0,.8);
+  position: relative;
+  overflow: hidden;
+}
+#content .castMatilda .castMatildaInner {
+  width: 57%;
+  padding-top: 6%;
+  float: right;
+  text-align: end;
+}
+#content .castMatilda .castMatildaInner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#content .castMatilda .castMatildaInner h3 {
+  color: #fde306;
+  font-size: 2.7777rem;
+}
+#content .castMatilda .castMatildaInner p:nth-of-type(1){
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* #content .castMatilda .castMatildaInner p:nth-of-type(2){
+  height: 100px;
+  overflow-y: auto;
+} */
+::-webkit-scrollbar {
+  display: none;
+}
+#content .castMatilda .castMatildaInner p {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 1.5rem 0;
+}
+#content .castMatilda ul {
+  width: 33%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  float: left;
+}
+#content .castMatilda ul li {
+  overflow: hidden;
+}
+#content .castMatilda ul li a {
+  display: block;
+}
+#content .castMatilda ul li a img {
+  width: 100%;
+  transition: all .3s;
+  transform: scale(1.3);
+}
+#content .castMatilda ul li a img:hover {
+  transform: scale(1.05);
+}
+#content .castMatilda ul li:nth-of-type(1) {
+  grid-row: 1;
+  grid-column: 1/3;
+}
+#content .castMatilda ul li:nth-of-type(2) {
+  grid-row: 2;
+  grid-column: 1/2;
+}
+#content .castMatilda ul li:nth-of-type(3) {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+/* Norman */
+#content .castNorman {
+  padding: 5% 10%;
+  background: rgba(113,0,0,.8);
+  position: relative;
+  overflow: hidden;
+}
+#content .castNorman .castNormanInner {
+  width: 53%;
+  float: left;
+  text-align: start;
+  padding-top: 5%;
+}
+#content .castNorman .castNormanInner::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+#content .castNorman .castNormanInner h3 {
+  color: #fde306;
+  font-size: 2.7777rem;
+}
+#content .castNorman .castNormanInner p:nth-of-type(1){
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* #content .castNorman .castNormanInner p:nth-of-type(2){
+  height: 100px;
+  overflow-y: auto;
+} */
+::-webkit-scrollbar {
+  display: none;
+}
+#content .castNorman .castNormanInner p {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 1.5rem 0;
+}
+#content .castNorman ul {
+  width: 35%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 200px;
+  gap: 20px;
+  float: right;
+}
+#content .castNorman ul li {
+  overflow: hidden;
+  /* padding-bottom: 30%; */
+}
+#content .castNorman ul li a {
+  display: block;
+}
+#content .castNorman ul li:hover {
+  animation: imgS .5s forwards;
+}
+@keyframes imgS {
+  0% {
+    filter: invert(100);
+    transform: scale(1.1);
+  }
+  100% {
+    filter: none;
+    transform: scale(1);
+  }
+}
+#content .castNorman ul li:nth-of-type(1){
+  background: url(../images/norman01.jpg) 0 no-repeat;
+  background-size: cover;
+  grid-row: 1;
+  grid-column: 1/2;
+  /* padding-bottom: 100%; */
+}
+#content .castNorman ul li:nth-of-type(2){
+  background: url(../images/norman02.jpg) 0 no-repeat;
+  background-size: cover;
+  grid-row: 1;
+  grid-column: 2/3;
+  /* padding-bottom: 100%; */
+}
+#content .castNorman ul li:nth-of-type(3){
+  background: url(../images/norman03.jpg) 0 no-repeat;
+  background-size: cover;
+  grid-row: 2;
+  grid-column: 1/3;
+}
+
+/* Other */
+#content .otherCont {
+  padding: 7% 10% 10% 10%;
+  background: rgba(0,0,0,.8);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+#content .otherCont h3 {
+  color: #fde306;
+  font-size: 2.7777rem;
+}
+#content .otherCont ul {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem 3rem;
+}
+#content .otherCont ul li {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#content .otherCont ul li:hover {
+  animation: another1 .3s ease-in-out;
+}
+#content .otherCont ul li:hover img {
+  animation: another2 .5s forwards;
+}
+@keyframes another1 {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -1.5rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes another2 {
+  0% {
+    filter: invert(50);
+  }
+  100% {
+    filter: none;
+  }
+}
+#content .otherCont ul li p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #fde306;
+}
+#content .otherCont ul li p span {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+}
+#content .otherCont ul li img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 30% 7% / 20% 15%;
+}
+@media screen and (max-width:1280px) {
+  #content .castMatilda .castMatildaInner {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  #content .castCont .castPara {
+    margin: 0;
+  }
+  #content .castLeon ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  #content .castLeon ul li:nth-of-type(4) {
+    display: none;
+  }
+  #content .castLeon ul li:nth-of-type(1) {
+    grid-row: 1;
+    grid-column: 1/3;
+  }
+  #content .castLeon ul li:nth-of-type(2) {
+    width: auto;
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+  #content .castLeon ul li:nth-of-type(3) {
+    width: auto;
+    grid-row: 2;
+    grid-column: 2/3;
+  }
+  #content .castMatilda .castMatildaInner {
+    padding-top: 4%;
+  }
+  #content .castMatilda ul {
+    grid-template-columns: 1fr;
+  }
+  #content .castMatilda ul li:nth-of-type(1) {
+    display: none;
+  }
+  #content .castMatilda ul li:nth-of-type(2) {
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  #content .castMatilda ul li:nth-of-type(3) {
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+  #content .castNorman ul {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px 250px;
+  }
+  #content .castNorman ul li:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 1/2;
+  }
+  #content .castNorman ul li:nth-of-type(3) {
+    display: none;
+  }
+  #content .otherCont ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #content .otherCont ul li:nth-of-type(7),
+  #content .otherCont ul li:nth-of-type(8) {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  .deconstructed {
+    font-size: 8rem;
+  }
+  #content .castCont::after {
+    display: none;
+  }
+  #content .castCont .castPara {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #content .castCont .castPara p { 
+    text-align: justify;
+  }
+  #content .castLeon ul {
+    width: 50%;
+    padding-top: 12%;
+  }
+  #content .castLeon ul li:nth-of-type(1) {
+    display: none;
+  }
+  #content .castLeon ul li:nth-of-type(2){
+    grid-row: 1;
+    grid-column: 1/2;
+  }
+  #content .castLeon ul li:nth-of-type(3){
+    grid-row: 1;
+    grid-column: 2/3;
+  }
+  #content .castMatilda ul {
+    width: 40%;
+    padding-top: 7%;
+  }
+  #content .castMatilda ul li:nth-of-type(3) {
+    display: none;
+  }
+  #content .castMatilda .castMatildaInner {
+    width: 52%;
+    padding-top: 5.5%;
+  }
+  #content .castMatilda .castMatildaInner p:nth-of-type(2) {
+    height: 85px;
+    overflow-y: auto;
+  }
+  #content .castNorman ul {
+    grid-template-rows: 300px;
+  }
+  #content .castNorman ul li:nth-of-type(1) {
+    background-size: contain;
+  }
+  #content .castNorman ul li:nth-of-type(2) {
+    display: none;
+  }
+  #content .castNorman .castNormanInner p:nth-of-type(2) {
+    height: 85px;
+    overflow-y: auto;
+  }
+  #content .otherCont ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #content .otherCont ul li:nth-of-type(5),
+  #content .otherCont ul li:nth-of-type(6) {
+    display: none;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .deconstructed {
+    font-size: 7rem;
+  }
+  #content .castLeon {
+    padding: 10%;
+  }
+  #content .castMatilda{
+    padding: 10%;
+  }
+  #content .castNorman {
+    padding: 10%;
+  }
+  #content .castLeon ul {
+    grid-template-columns: 1fr;
+    padding-top: 0;
+  }
+  #content .castLeon ul li:nth-of-type(2) {
+    display: none;
+  }
+  #content .castLeon .castLeonInner p:nth-of-type(2) {
+    display: none;
+  }
+  #content .castLeon .castLeonInner p {
+    margin: 0;
+  }
+  #content .castLeon .castLeonInner {
+    padding-top: 10%;
+  }
+  #content .castMatilda .castMatildaInner p:nth-of-type(2) {
+    display: none;
+  }
+  #content .castMatilda ul {
+    width: 35%;
+    padding-top: 0;
+  }
+  #content .castMatilda .castMatildaInner {
+    width: 63%;
+  }
+  #content .castMatilda .castMatildaInner p:nth-of-type(1) {
+    margin: 0;
+  }
+  #content .castCont h3,
+  #content .castLeon .castLeonInner h3,
+  #content .castMatilda .castMatildaInner h3,
+  #content .castNorman .castNormanInner h3,
+  #content .otherCont h3 {
+    font-size: 2.5rem;
+  }
+  #content .castNorman .castNormanInner p:nth-of-type(1) {
+    margin: 0;
+  }
+  #content .castNorman .castNormanInner p:nth-of-type(2) {
+    display: none;
+  }
+  #content .castNorman ul {
+    grid-template-rows: 180px;
+  }
+  #content .castNorman ul li:nth-of-type(1) {
+    background-size: cover;
+  }
+  #content .otherCont ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #content .otherCont ul li:nth-of-type(3),
+  #content .otherCont ul li:nth-of-type(4){
+    display: none;
+  }
+  #content .otherCont ul li img {
+    width: 50%;
+  }
+  #content .otherCont {
+    padding: 10% 10% 15% 10%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .deconstructed {
+    font-size: 5rem;
+  }
+  #content .castCont {
+    padding: 8%;
+  }
+  #content .castCont .castPara {
+    width: auto;
+    margin: 0;
+  }
+  #content .castLeon,
+  #content .castMatilda,
+  #content .castNorman {
+    padding: 8%;
+  }
+  #content .otherCont {
+    padding: 8% 8% 15% 8%;
+  }
+  #content .castLeon .castLeonInner {
+    padding: 0;
+  }
+  #content .castMatilda .castMatildaInner {
+    width: 60%;
+    padding: 0;
+  }
+  #content .castMatilda ul {
+    width: 40%;
+  }
+  #content .castNorman .castNormanInner {
+    padding-top: 0;
+  }
+  #content .castNorman ul {
+    grid-template-rows: 200px;
+  }
+}

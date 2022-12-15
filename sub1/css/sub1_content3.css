@@ -1,0 +1,2367 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#content::before {
+  content: "";
+  display: block;
+  width: 2000px;
+  height: 100%;
+  position: absolute;
+  left: -400px;
+  top: -40px;
+  background: url(../images/content3/content_bg.png) repeat-y;
+  z-index: -100;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 100px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+#content .contentArea {
+  padding-bottom: 100px;
+}
+/* 슬라이드 메뉴 */
+.slideMenu {display: none; position: fixed; top: 30%; right: 120px; z-index: 1000;}
+.slideMenu ul li {margin-top: 50px; text-align: right; padding-right: 40px;}
+.slideMenu ul li a span {opacity: 0; transition: all .5s; font-weight: 500; color: #555;}
+/* .slideMenu ul li:hover a span {opacity: 1;} */
+.slideMenu ul li a::before {content: ''; display: block; width: 20px; height: 20px;
+                            border-radius: 20px; background: #182eae; position: absolute; right: 0; margin-top: 3px;}
+.slideMenu ul li:nth-child(1) a::after {content: ''; display: block; width: 2px; height: 220px; background: #182eae;
+                                  position: absolute; right: 9px; top: 22%;}
+
+/* 2018 */
+#content .contentArea .year2018 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2018 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2018 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2018 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2018 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2018 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2018 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2012 */
+#content .contentArea .year2012 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2012 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2012 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2012 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2012 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2012 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2012 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2011 */
+#content .contentArea .year2011 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2011 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2011 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2011 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2011 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2011 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2011 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2009 */
+#content .contentArea .year2009 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2009 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2009 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2009 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2009 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2009 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2009 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2009_1 */
+#content .contentArea .year2009_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2009_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2009_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2009_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2009_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2009_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2009_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2009_2 */
+#content .contentArea .year2009_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2009_2 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2009_2 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2009_2 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2009_2 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2009_2 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2009_2 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2008 */
+#content .contentArea .year2008 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2008 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2008 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2008 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2008 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2008 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2008 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2008_1 */
+#content .contentArea .year2008_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2008_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2008_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2008_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2008_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2008_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2008_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2008_2 */
+#content .contentArea .year2008_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2008_2 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2008_2 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2008_2 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2008_2 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2008_2 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2008_2 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2008_3 */
+#content .contentArea .year2008_3 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2008_3 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2008_3 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2008_3 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2008_3 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2008_3 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2008_3 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2007 */
+#content .contentArea .year2007 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2007 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2007 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2007 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2007 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2007 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2007 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2006 */
+#content .contentArea .year2006 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2006 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2006 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2006 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2006 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2006 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2006 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2005 */
+#content .contentArea .year2005 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2005 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2005 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2005 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2005 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2005 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2005 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2005_1 */
+#content .contentArea .year2005_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2005_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2005_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2005_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2005_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2005_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2005_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2004 */
+#content .contentArea .year2004 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2004 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2004 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2004 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2004 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2004 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2004 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2004_1 */
+#content .contentArea .year2004_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2004_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2004_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2004_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2004_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2004_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2004_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2004_2 */
+#content .contentArea .year2004_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2004_2 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2004_2 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2004_2 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2004_2 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2004_2 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2004_2 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2003 */
+#content .contentArea .year2003 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2003 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2003 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2003 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2003 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2003 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2003 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2003_1 */
+#content .contentArea .year2003_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2003_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2003_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2003_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2003_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2003_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2003_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 2000 */
+#content .contentArea .year2000 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year2000 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year2000 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year2000 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year2000 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year2000 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year2000 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1999 */
+#content .contentArea .year1999 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1999 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1999 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1999 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1999 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1999 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1999 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1997 */
+#content .contentArea .year1997 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1997 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1997 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1997 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1997 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1997 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1997 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1997_1 */
+#content .contentArea .year1997_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1997_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1997_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1997_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1997_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1997_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1997_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1997_2 */
+#content .contentArea .year1997_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1997_2 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1997_2 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1997_2 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1997_2 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1997_2 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1997_2 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1996 */
+#content .contentArea .year1996 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1996 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1996 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1996 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1996 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1996 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1996 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1996_1 */
+#content .contentArea .year1996_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1996_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1996_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1996_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1996_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1996_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1996_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1995 */
+#content .contentArea .year1995 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1995 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1995 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1995 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1995 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1995 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1995 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1995_1 */
+#content .contentArea .year1995_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1995_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1995_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1995_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1995_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1995_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1995_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1995_2 */
+#content .contentArea .year1995_2 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1995_2 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1995_2 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1995_2 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1995_2 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1995_2 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1995_2 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1994 */
+#content .contentArea .year1994 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1994 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1994 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1994 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1994 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1994 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1994 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1993 */
+#content .contentArea .year1993 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1993 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1993 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1993 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1993 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1993 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1993 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1992 */
+#content .contentArea .year1992 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1992 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1992 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1992 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1992 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1992 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1992 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1992_1 */
+#content .contentArea .year1992_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1992_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1992_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1992_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1992_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1992_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1992_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1991 */
+#content .contentArea .year1991 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1991 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1991 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1991 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1991 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1991 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1991 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1990 */
+#content .contentArea .year1990 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1990 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1990 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1990 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1990 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1990 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1990 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1990_1 */
+#content .contentArea .year1990_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1990_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1990_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1990_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1990_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1990_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1990_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1987 */
+#content .contentArea .year1987 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1987 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1987 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1987 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1987 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1987 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1987 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1987_1 */
+#content .contentArea .year1987_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1987_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1987_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1987_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1987_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1987_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1987_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1986 */
+#content .contentArea .year1986 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1986 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1986 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1986 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1986 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1986 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1986 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1985 */
+#content .contentArea .year1985 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1985 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1985 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1985 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1985 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1985 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1985 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1985_1 */
+#content .contentArea .year1985_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1985_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1985_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1985_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1985_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1985_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1985_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1984 */
+#content .contentArea .year1984 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1984 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1984 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1984 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1984 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1984 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1984 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1982 */
+#content .contentArea .year1982 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1982 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1982 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1982 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1982 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1982 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1982 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1981 */
+#content .contentArea .year1981 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1981 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1981 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1981 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1981 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1981 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1981 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1977 */
+#content .contentArea .year1977 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1977 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1977 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1977 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1977 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1977 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1977 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1977_1 */
+#content .contentArea .year1977_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1977_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1977_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1977_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1977_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1977_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1977_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1976 */
+#content .contentArea .year1976 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1976 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1976 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1976 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1976 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1976 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1976 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1976_1 */
+#content .contentArea .year1976_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1976_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1976_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1976_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1976_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1976_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1976_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1975 */
+#content .contentArea .year1975 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1975 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1975 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1975 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1975 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1975 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1975 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1974 */
+#content .contentArea .year1974 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1974 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1974 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1974 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1974 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1974 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1974 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1973 */
+#content .contentArea .year1973 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1973 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1973 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1973 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1973 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1973 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1973 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1971 */
+#content .contentArea .year1971 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1971 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1971 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1971 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1971 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1971 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1971 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1970 */
+#content .contentArea .year1970 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1970 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1970 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1970 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1970 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1970 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1970 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1970_1 */
+#content .contentArea .year1970_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1970_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1970_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1970_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1970_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1970_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1970_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1969 */
+#content .contentArea .year1969 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1969 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1969 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1969 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1969 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1969 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1969 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1969_1 */
+#content .contentArea .year1969_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1969_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1969_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1969_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1969_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1969_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1969_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1968 */
+#content .contentArea .year1968 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1968 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1968 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1968 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1968 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1968 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1968 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1968_1 */
+#content .contentArea .year1968_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1968_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1968_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1968_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1968_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1968_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1968_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1963 */
+#content .contentArea .year1963 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1963 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1963 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1963 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1963 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1963 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1963 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1963_1 */
+#content .contentArea .year1963_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1963_1 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1963_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1963_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1963_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1963_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1963_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1961 */
+#content .contentArea .year1961 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1961 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1961 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1961 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1961 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1961 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1961 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1960 */
+#content .contentArea .year1960 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1960 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1960 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1960 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1960 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1960 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1960 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1957 */
+#content .contentArea .year1957 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1957 ul li:first-child {
+  float: left;
+}
+#content .contentArea .year1957 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  border-top: 1px solid #0081cc;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1957 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+}
+#content .contentArea .year1957 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1957 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1957 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 1957_1 */
+#content .contentArea .year1957_1 {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .contentArea .year1957_1 ul li:first-child {
+  float: left;
+  width: 270px;
+  height: 84px;
+  border-bottom: 1px solid #0081cc;
+}
+#content .contentArea .year1957_1 ul li:first-child > a {
+  display: block;
+  width: 270px;
+  padding: 7px 0 7px 0;
+  font-size: 3em;
+  font-weight: 700;
+}
+#content .contentArea .year1957_1 ul li:last-child {
+  float: right;
+  width: 900px;
+  height: 83px;
+  font-size: 1.125em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#content .contentArea .year1957_1 ul li span {
+  margin-right: 20px;
+  font-weight: 500;
+}
+#content .contentArea .year1957_1 ul li p {
+  padding-top: 28px;
+  display: inline-block;
+}
+#content .contentArea .year1957_1 ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* 스크롤 이벤트 */
+.moveBox1, .moveBox2, .moveBox3, .moveBox4 {
+  position: relative;
+  opacity: 0;
+}
+.moveBoxHistory {
+  animation: moveBoxHistory 1s forwards;
+}
+@keyframes moveBoxHistory {
+  from{
+    top: 100px;
+  }
+  to{
+    top: 0;
+    opacity: 1;
+  }
+}

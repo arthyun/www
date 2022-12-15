@@ -1,0 +1,102 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub4.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 50%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(2) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 35px 12.5%;
+}
+
+/* content */
+
+/* faq */
+.faq{width:90%; padding: 0 5%; font-size:12px; position:relative; margin-top: 10px; font-size: 14px;}  
+.faq > span{display:block; position:absolute; right:5%; top: 0;}  
+.faq > span .all{display: block; width: 100%; height: 30px; font-weight: 500; text-align: center; line-height: 30px; color:#0081cc; text-decoration:none; font-size: 1em;}  
+.faq ul{margin:0;list-style:none;padding-top: 30px;}  
+.faq ul li{margin-bottom: 10px;background: #f8f8f8; border-radius: 16px;}
+.faq .q{padding-left: 13%; position: relative; font-weight: 500;}  
+.faq .q a.trigger{word-spacing: -2px; font-size: 1em; border-radius: 16px; display:block; height:50px; background:#f8f8f8; color:#333;text-align:left;text-decoration:none; box-sizing: border-box;line-height: 50px; text-overflow: ellipsis; white-space: nowrap; padding-right: 5%;}  
+.faq .hide .q a.trigger{font-weight:normal;background:none}  
+.faq .q a.trigger:hover,  
+.faq .q a.trigger:active,  
+.faq .q a.trigger:focus{color:#000} 
+.faq .q span{display: block; position: absolute; right: 5%; top:0;}
+.faq .q span i {font-size: 1.16em; color: #0081cc;}
+.faq .a {margin:0; line-height:1.5; margin-bottom:10px; padding: 3px 5% 10px 13%; position: relative; display: none; font-size: 1em;} 
+.faq .q::before{content: 'Q'; color: #0081cc; display: block; position: absolute; left: 5%; top: 15px; font-size: 1em; font-weight: 700;}
+.faq .a::before{content: 'A'; color: #0081cc; display: block; position: absolute; left: 5%; top: 13%; font-size: 1em; font-weight: 700;}
+.faq ul li:nth-of-type(1) {margin-top: 10px;}
+
+/* 
+.faq ul li:nth-of-type(2) .a {padding: 4% 5% 0 13%;}
+.faq ul li:nth-of-type(3) .a {padding: 4% 5% 0 13%;}
+.faq ul li:nth-of-type(4) .a {padding: 4% 5% 0 13%;}
+.faq ul li:nth-of-type(7) .a {height: 42px;}
+.faq ul li:nth-of-type(9) .a {height: 42px;} 
+
+@media screen and (min-width: 640px) {
+    .faq ul li:nth-of-type(2) .a {padding: 2% 5% 0 13%;}
+    .faq ul li:nth-of-type(3) .a {padding: 2% 5% 0 13%;}
+    .faq ul li:nth-of-type(4) .a {padding: 2% 5% 0 13%;}
+}
+*/

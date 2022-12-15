@@ -1,0 +1,134 @@
+<?
+  session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>홍보센터-미디어센터</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="shortcut icon" href="../common/images/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./common/css/sub6common.css" >
+    <link rel="stylesheet" href="./css/sub6_content2.css" >
+    <script src="https://kit.fontawesome.com/bc0f1996aa.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+
+      <div class="main">
+        <img src="./common/images/company_info_main6-2.jpg" alt="사업분야메인" >
+        <h3>홍보센터</h3>
+      </div>
+
+      <div class="subNav">
+        <ul>
+          <li><a href="./sub6_1.html">뉴스룸</a></li>
+          <li class="current"><a href="./sub6_2.html">미디어센터</a></li>
+          <li><a href="./sub6_3.html">공지사항</a></li>
+          <li><a href="./sub6_4.html">FAQ & 문의하기</a></li>
+        </ul>
+      </div>
+
+      <article id="content">
+        <div class="titleArea">
+          <div class="lineMap">
+            <span
+              ><a href="../index.html"><i class="fa-solid fa-house"></i></a
+            ></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_1.html">홍보센터</a></span>
+            &nbsp;&nbsp;&gt;&nbsp;
+            <span><a href="./sub6_2.html">미디어센터</a></span>
+          </div>
+          <h2>미디어센터</h2>
+        </div>
+
+        <div class="contentArea">
+          <!-- 본문 컨텐츠영역 -->
+          <p class="intro">
+            혁신적인 미래를 향한 희망을 담았습니다.<br>
+            <span class="blue">코오롱 인더스트리</span>의 어제 오늘, 그리고 내일의 얼굴을 만나보세요.
+          </p>
+        
+
+
+        <div class="mediaMain">
+          <div class="movieSection">
+            <h3 class="hidden">재생 영상</h3>
+            <iframe name="ifr" width="1000" height="550" src="https://www.youtube.com/embed/L5MWNwplhwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          
+        </div>
+
+        <div class="selectSection">
+          <h3 class="hidden">재생 영상리스트</h3>
+          <div class="select1">
+            <div class="moveBox">
+              <ul>
+                <li class="list1">
+                  <a href="https://www.youtube.com/embed/L5MWNwplhwU" target="ifr">
+                    <div>
+                      <img src="./images/content2/media1.jpg" alt="">
+                    </div>
+                      <span>예약은 빠르게, 가격은 확실하게!</span>
+                      <p>안녕하세요! 코오롱 소셜 미디어 대학생 서포터즈 8기 옥지연입니다.</p>
+                  </a>
+                </li>
+                <li class="list2">
+                  <a href="https://www.youtube.com/embed/CqOw2l8g_6Y" target="ifr">
+                    <div>
+                      <img src="./images/content2/media2.jpg" alt="">
+                    </div>
+                      <span>쿠론,2019 SS 시즌 광고 캠페인 'SHINE BRIGHT 10'</span>
+                      <p>쿠론의 새로운 광고 캠페인을 <br>만나보세요!</p>
+                  </a>
+                </li>
+                <li class="list3">
+                  <a href="https://www.youtube.com/embed/LzLV2wDNPKQ" target="ifr">
+                    <div>
+                      <img src="./images/content2/media3.jpg" alt="">
+                    </div>
+                      <span>서울식물원 프로그램 '세계를 지키는 그린 탐험대' 진행</span>
+                      <p>에코 롱롱 큐브의 '세계를 지키는 그린 탐험대'를 진행합니다.</p>
+                  </a>
+                </li>
+                <li class="list4">
+                  <a href="https://www.youtube.com/embed/PjW3gNWVBtY" target="ifr">
+                    <div>
+                      <img src="./images/content2/media4.jpg" alt="">
+                    </div>
+                      <span>에피그램, 올모스트홈 스테이 고창</span>
+                      <p>에피그램, 올모스트홈 스테이 고창 오픈</p>
+                  </a>
+                </li>
+                <li class="list5">
+                  <a href="https://www.youtube.com/embed/GZb4Nk6pQTk" target="ifr">
+                    <div>
+                      <img src="./images/content2/media5.jpg" alt="">
+                    </div>
+                      <span>골프브랜드 신상품 소개</span>
+                      <p>코오롱 스포츠의 골프브랜드 신상품을 소개합니다.</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a class="button prev" href="#">
+            <i class="fa-solid fa-angle-left"></i>
+          </a>
+          <a class="button next" href="#">
+            <i class="fa-solid fa-angle-right"></i>
+          </a>
+        </div>
+
+        </div>
+
+        <div class="youtubeGo">
+          <a href="https://www.youtube.com/c/kolonyoutube" target="_blank">KOLON 유튜브 바로가기</a>
+        </div>
+      </div>
+      </article>
+      <script src="./js/media.js"></script>
+      <? include "../common/sub_footer.html" ?>
+  </body>
+</html>

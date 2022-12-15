@@ -1,0 +1,248 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub1.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(4) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 70%;
+    padding: 20px 15% 60px 15%;
+}
+
+/* content */
+#content .tireMain {
+    width: 100%;
+}
+#content .tireMain h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .tireMain h3::before {
+    content: 'HYPERCORD ROAD';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -50%;
+    left: 5%;
+}
+#content .tireMain .tireInner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .tireMain .tireInner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .tireMain .tireInner p:nth-of-type(1) {
+    width: 90%;
+    padding: 15px 5% 20px 5%;
+    word-spacing: -1px;
+}
+#content .tireMain .tireInner strong {
+    font-size: 1.429em;
+    display: inline-block;
+    margin-left: 5%;
+}
+#content .tireMain .tireInner p:nth-of-type(2) {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -2px;
+}
+
+#content .airBagMain {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .airBagMain h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .airBagMain h3::before {
+    content: 'SECURA STELEN';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -50%;
+    left: 5%;
+}
+#content .airBagMain .airBagInner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .airBagMain .airBagInner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .airBagMain .airBagInner p:nth-of-type(1) {
+    width: 90%;
+    padding: 15px 5% 20px 5%;
+    word-spacing: -1px;
+}
+#content .airBagMain .airBagInner strong {
+    font-size: 1.429em;
+    display: inline-block;
+    margin-left: 5%;
+}
+#content .airBagMain .airBagInner p:nth-of-type(2) {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+}
+
+#content .lineMain {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .lineMain h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .lineMain h3::before {
+    content: 'AKILEN';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -50%;
+    left: 5%;
+}
+#content .lineMain .lineInner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .lineMain .lineInner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .lineMain .lineInner p:nth-of-type(1) {
+    width: 90%;
+    padding: 15px 5% 20px 5%;
+    word-spacing: -1px;
+}
+#content .lineMain .lineInner strong {
+    font-size: 1.429em;
+    display: inline-block;
+    margin-left: 5%;
+}
+#content .lineMain .lineInner p:nth-of-type(2) {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+}
+
+#content .chamudeMain {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .chamudeMain h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chamudeMain h3::before {
+    content: 'CHAMUDE';
+    display: block;
+    font-size: .8rem;
+    font-weight: normal;
+    color: #182eae;
+    position: absolute;
+    bottom: -50%;
+    left: 5%;
+}
+#content .chamudeMain .chamudeInner {
+    margin-top: 30px;
+    text-align: justify;
+}
+#content .chamudeMain .chamudeInner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chamudeMain .chamudeInner p:nth-of-type(1) {
+    width: 90%;
+    padding: 15px 5% 20px 5%;
+    word-spacing: -1px;
+}
+#content .chamudeMain .chamudeInner strong {
+    font-size: 1.429em;
+    display: inline-block;
+    margin-left: 5%;
+}
+#content .chamudeMain .chamudeInner p:nth-of-type(2) {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+}

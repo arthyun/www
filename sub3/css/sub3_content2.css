@@ -1,0 +1,198 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 960px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 0 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+/* 본문 영역 */
+#content .contentArea .earth {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .imgLast {
+  margin: 40px 0 50px 0;
+  width: 2000px;
+  height: 500px;
+  position: relative;
+  left: -400px;
+  background: url(../images/content2/content_03_1.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0;
+}
+#content .contentArea .earth p {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.6em;
+}
+#content .contentArea .accordion {
+  width: 1200px;
+  height: 550px;
+  overflow:hidden; 
+  margin: 100px 0;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .accordion ul {
+ display: flex;
+ position: relative;
+}
+#content .contentArea .accordion li {
+  width:720px;
+  height:550px;
+  overflow: hidden;
+}
+#content .contentArea .accordion li:nth-child(1) {
+  background: url(../images/content2/content_06.jpg) no-repeat;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+#content .contentArea .accordion li:nth-child(2) {
+  background: url(../images/content2/content_07.jpg) no-repeat;
+  position: absolute;
+  left: 240px;
+  z-index: 10;
+}
+#content .contentArea .accordion li:nth-child(3) {
+  background: url(../images/content2/content_08.jpg) no-repeat;
+  position: absolute;
+  left: 480px;
+  z-index: 20;
+}
+#content .contentArea .accordion li:nth-child(4) {
+  background: url(../images/content2/content_09.jpg) no-repeat;
+  position: absolute;
+  left: 720px;
+  z-index: 30;
+}
+#content .contentArea .accordion li:nth-child(5) {
+  background: url(../images/content2/content_10.jpg) no-repeat;
+  position: absolute;
+  left: 960px;
+  z-index: 40;
+}
+/* .accordion ul li span {width:240px; height:550px; display:block; cursor:pointer;
+                      position:relative; left:0px; top:0;
+                      background:#FFF; opacity: 0;} */
+.accordion ul li dl {width: 720px; height:550px; background: #333; opacity: .3; transition: all .5s; display: none;}     
+.accordion ul li dl dt {color: #fff; font-size: 30px; font-weight: 700;}
+.accordion ul li dl dd {color: #fff;}
+.accordion ul li dl span {color: #fff;}
+
+.accordion ul li > div {
+  float: left;
+  box-sizing: border-box;
+  height: 550px;
+}
+.accordion ul li .ac_title {
+    width: 240px;
+    /* height: 550px; */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-top: 240px;
+    font-family: 'Roboto',sans-serif;
+    text-shadow: 0 0 10px rgb(0 0 0);
+}
+.accordion ul li:nth-child(4) .ac_title {
+  padding-top: 210px;
+}
+.accordion ul li .ac_main {
+  width: 720px;
+  padding: 150px 100px 150px 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  color: #fff;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+.accordion ul li .ac_main p:nth-of-type(1){
+  font-size: 30px;
+}
+.accordion ul li .ac_main p:nth-of-type(2){
+  margin-top: 50px;
+  font-size: 16px;
+}
+.accordion ul li .btn {
+  width: 240px;
+  height: 550px;
+  display: block;
+  position: absolute;
+}
+
+/* scroll */
+.moveAccordion {
+  animation: moveAccordion 1s forwards;
+}
+@keyframes moveAccordion {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.moveEarth {
+  animation: moveEarth 1s forwards;
+}
+@keyframes moveEarth {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.moveImgLast {
+  animation: moveImgLast 1s forwards;
+}
+@keyframes moveImgLast {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}

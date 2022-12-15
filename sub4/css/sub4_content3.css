@@ -1,0 +1,334 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 930px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 0 0;
+  font-size: 2.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #182eae;
+}
+
+/* 본문 */
+#content .contentArea .mind {
+  margin: 70px 0;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .mind ul {
+  display: flex;
+  justify-content: space-between;
+}
+#content .contentArea .mind .mind1,
+.mind2,
+.mind3,
+.mind4 {
+  border-radius: 20px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind1:hover {
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0);
+}
+#content .contentArea .mind a {
+  display: block;
+  width: 270px;
+  height: 370px;
+  border-radius: 20px;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind1 a dl {
+  text-align: center;
+  padding: 60px 0;
+}
+#content .contentArea .mind .mind1 a dl dt {
+  width: 142px;
+  height: 150px;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  background: url(../images/content3/content_01.png) no-repeat;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind1 a dl dd {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind1 a dl span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #182eae;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind2 a dl {
+  text-align: center;
+  padding: 60px 0;
+}
+#content .contentArea .mind .mind2 a dl dt {
+  width: 150px;
+  height: 150px;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  background: url(../images/content3/content_02.png) no-repeat;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind2 a dl dd {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind2 a dl span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #182eae;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind3 a dl {
+  text-align: center;
+  padding: 60px 0;
+}
+#content .contentArea .mind .mind3 a dl dt {
+  width: 146px;
+  height: 146px;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  background: url(../images/content3/content_03.png) no-repeat;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind3 a dl dd {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind3 a dl span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #182eae;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind4 a dl {
+  text-align: center;
+  padding: 60px 0;
+}
+#content .contentArea .mind .mind4 a dl dt {
+  width: 150px;
+  height: 150px;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  background: url(../images/content3/content_04.png) no-repeat;
+  margin: 0 auto;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind4 a dl dd {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind4 a dl span {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  color: #182eae;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .mind .mind1:hover a {
+  background: #ef495a;
+}
+#content .contentArea .mind .mind1:hover a dl dt {
+  background: url(../images/content3/content_01-1.png) no-repeat;
+}
+#content .contentArea .mind .mind1:hover a dl dd {
+  color: #fff;
+}
+#content .contentArea .mind .mind1:hover a dl span {
+  color: #fff;
+}
+#content .contentArea .mind .mind2:hover a {
+  background: #ef495a;
+}
+#content .contentArea .mind .mind2:hover a dl dt {
+  background: url(../images/content3/content_02-1.png) no-repeat;
+}
+#content .contentArea .mind .mind2:hover a dl dd {
+  color: #fff;
+}
+#content .contentArea .mind .mind2:hover a dl span {
+  color: #fff;
+}
+#content .contentArea .mind .mind3:hover a {
+  background: #ef495a;
+}
+#content .contentArea .mind .mind3:hover a dl dt {
+  background: url(../images/content3/content_03-1.png) no-repeat;
+}
+#content .contentArea .mind .mind3:hover a dl dd {
+  color: #fff;
+}
+#content .contentArea .mind .mind3:hover a dl span {
+  color: #fff;
+}
+#content .contentArea .mind .mind4:hover a {
+  background: #ef495a;
+}
+#content .contentArea .mind .mind4:hover a dl dt {
+  background: url(../images/content3/content_04-1.png) no-repeat;
+}
+#content .contentArea .mind .mind4:hover a dl dd {
+  color: #fff;
+}
+#content .contentArea .mind .mind4:hover a dl span {
+  color: #fff;
+}
+#content .contentArea .bigBox {
+  display: flex;
+  flex-direction: column;
+}
+#content .contentArea .bigBox li {
+  margin: 50px 0;
+}
+#content .contentArea .bigBox li:nth-of-type(1) {
+  height: 300px;
+  background: url(../images/content3/content_05.png) no-repeat;
+  margin-top: 30px;
+  position: relative;
+}
+#content .contentArea .bigBox li:nth-of-type(2) {
+  height: 300px;
+  background: url(../images/content3/content_06.png) no-repeat;
+  color: #fff;
+  position: relative;
+}
+#content .contentArea .bigBox li:nth-of-type(3) {
+  height: 300px;
+  background: url(../images/content3/content_07.png) no-repeat;
+  color: #fff;
+  position: relative;
+}
+#content .contentArea .bigBox li:nth-of-type(4) {
+  height: 300px;
+  background: url(../images/content3/content_08.png) no-repeat;
+  color: #fff;
+  margin-bottom: 100px;
+  position: relative;
+}
+#content .contentArea .bigBox li h3 {
+  font-size: 1.875em;
+}
+#content .contentArea .bigBox li dl {
+  width: 640px;
+}
+#content .contentArea .bigBox li dl dd {
+  margin-top: 10px;
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+#content .contentArea .bigBox li:nth-of-type(1) h3 {
+  position: absolute;
+  right: 540px;
+  top: 20%;
+}
+#content .contentArea .bigBox li:nth-of-type(1) dl {
+  position: absolute;
+  right: 47px;
+  top: 35%;
+}
+#content .contentArea .bigBox li:nth-of-type(2) h3 {
+  position: absolute;
+  left: 50px;
+  top: 21%;
+}
+#content .contentArea .bigBox li:nth-of-type(2) dl {
+  position: absolute;
+  left: 50px;
+  top: 36%;
+}
+#content .contentArea .bigBox li:nth-of-type(3) h3 {
+  position: absolute;
+  right: 540px;
+  top: 21%;
+}
+#content .contentArea .bigBox li:nth-of-type(3) dl {
+  position: absolute;
+  right: 47px;
+  top: 36%;
+}
+#content .contentArea .bigBox li:nth-of-type(4) h3 {
+  position: absolute;
+  left: 50px;
+  top: 21%;
+}
+#content .contentArea .bigBox li:nth-of-type(4) dl {
+  position: absolute;
+  left: 50px;
+  top: 36%;
+}
+/* scroll */
+.moveMind {
+  animation: moveMind 1s forwards;
+}
+@keyframes moveMind {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.movebigBox {
+  animation: movebigBox 1.5s forwards;
+}
+@keyframes movebigBox {
+  0%{
+    transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}

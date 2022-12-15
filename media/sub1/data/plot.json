@@ -1,0 +1,38 @@
+{
+"plot1": 
+        [
+            {
+                "route" : "./images/behind02.jpg"
+            },
+            {
+                "route" : "./images/behind03.jpg"
+            },
+            {
+                "route" : "./images/behind04.jpg"
+            }
+        ],
+"plot2": 
+        [
+            {
+                "route" : "./images/behind01.jpg"
+            }
+        ],
+"plot3": 
+        [
+            {
+                "route" : "./images/scene01.jpg"
+            },
+            {
+                "route" : "./images/scene02.jpg"
+            },
+            {
+                "route" : "./images/scene04.jpg"
+            },
+            {
+                "route" : "./images/scene03.jpg"
+            },
+            {
+                "route" : "./images/scene05.jpg"
+            }
+        ]
+}

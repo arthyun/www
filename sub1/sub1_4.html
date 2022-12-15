@@ -1,0 +1,259 @@
+<?
+  session_start(); 
+?>
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>기업정보-오시는 길</title>
+    <link rel="stylesheet" href="../common/css/common.css" >
+    <link rel="shortcut icon" href="../common/images/favicon.png" type="image/x-icon" >
+    <link rel="stylesheet" href="./common/css/sub1common.css" >
+    <link rel="stylesheet" href="./css/sub1_content4.css" >
+    <script src="https://kit.fontawesome.com/bc0f1996aa.js" crossorigin="anonymous"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3b0f3bb7c34c9fd38990372dac3ba078"></script>
+    <script src="./js/kakaomap4.js"></script>
+  </head>
+  <body>
+    <? include "../common/sub_header.html" ?>
+
+    <div class="main">
+      <img src="./common/images/company_info_main.jpg" alt="기업정보메인" >
+      <h3>기업정보</h3>
+    </div>
+
+    <div class="subNav">
+      <ul>
+        <li><a href="./sub1_1.html">기업개요</a></li>
+        <li><a href="./sub1_2.html">CEO 인사말</a></li>
+        <li><a href="./sub1_3.html">연혁</a></li>
+        <li class="current"><a href="./sub1_4.html">오시는 길</a></li>
+      </ul>
+    </div>
+
+    <article id="content">
+      <div class="titleArea">
+        <div class="lineMap">
+          <span>
+            <a href="../index.html">
+              <i class="fa-solid fa-house"></i>
+            </a>
+          </span>
+          &nbsp;&nbsp;&gt;&nbsp;
+          <span><a href="./sub1_1.html">기업정보</a></span>
+          &nbsp;&nbsp;&gt;&nbsp;
+          <span><a href="./sub1_4.html">오시는 길</a></span>
+        </div>
+        <h2>오시는 길</h2>
+      </div>
+
+      <div class="contentArea">
+        <!-- 본문 컨텐츠영역 -->
+        <p class="intro">
+          생활 속 작은 기쁨을 만들어 가는 <span class="blue">코오롱 인더스트리</span> <br >고객으로 부터 가장 사랑받는
+          기업이 되겠습니다.
+        </p>
+        <div class="tabs">
+          <ul class="tab_menu">
+            <li><a class="tab tab1" href="#">본사</a></li>
+            <li><a class="tab tab2" href="#">과천사무소</a></li>
+            <li><a class="tab tab3" href="#">사업장</a></li>
+            <li><a class="tab tab4" href="#">공장</a></li>
+          </ul>
+      
+        <div class="contlist map1">
+          <h3 class="hidden">코오롱 인더스트리 본사</h3>
+          <div id="company1"></div>
+          <div class="location">
+            <dl>
+              <dt>
+                주소
+                <span>도로명</span>
+                <span>지번</span>
+                <span>우편번호</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>서울 강남구 삼성로 518 코오롱인더스트리</li>
+                  <li>삼성동 157</li>
+                  <li>06168</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                지하철 이용 시
+                <span class="line2">2호선</span>
+                <span class="line2_1">2호선,수인선</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>2호선 삼성역 5번 출구 약 10분 700M</li>
+                  <li>2호선 / 수인분당선 선릉역 10번 출구 약 12분 800M</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                버스 이용 시
+                <span class="bus1">간선</span>
+                <span class="bus2">공항</span>
+                <span class="bus3">지선</span>
+                <span class="bus4">마을</span>
+                <span class="bus5">직행</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>146, 333, 341, 360, 740, N13, N61</li>
+                  <li>6000</li>
+                  <li>2415, 3011, 3411</li>
+                  <li>강남07, 강남08</li>
+                  <li>500-2, 1100, 1700, 2000, 2000-1, 7007, 9303, 9414, 8001</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="contlist map2">
+          <h3 class="hidden">과천사무소</h3>
+          <div id="company2"></div>
+          <div class="location">
+            <dl>
+              <dt>
+                주소
+                <span>도로명</span>
+                <span>지번</span>
+                <span>우편번호</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>경기도 과천시 별양동 별양상가 2로 42</li>
+                  <li>별양상가 2로 42</li>
+                  <li>13837</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                지하철 이용 시
+                <span class="line4">4호선</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>4호선 정부과천청사역 4번 출구 약 3분 500M</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                버스 이용 시
+                <span class="bus1">간선</span>
+                <span class="bus3">지선</span>
+                <span class="bus5">직행</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>441, 540</li>
+                  <li>11-2, 1-1</li>
+                  <li>3030</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="contlist map3">
+          <h3 class="hidden">경산 사업장</h3>
+          <div id="company3"></div>
+          <div class="location">
+            <dl>
+              <dt>
+                주소
+                <span>도로명</span>
+                <span>지번</span>
+                <span>우편번호</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>경상북도 경산시 진량읍 부기리 345</li>
+                  <li>부기리 345</li>
+                  <li>712833</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                기차 이용 시
+                <span>SRT</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>수서역에서 탑승 후 동대구역 하차</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                버스 이용 시
+                <span>고속버스</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>서울 고속버스 터미널에서 탑승 후 동대구 터미널 하차</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="contlist map4">
+          <h3 class="hidden">구미 공장</h3>
+          <div id="company4"></div>
+          <div class="location">
+            <dl>
+              <dt>
+                주소
+                <span>도로명</span>
+                <span>지번</span>
+                <span>우편번호</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>경상북도 구미시 수출대로 48</li>
+                  <li>수출대로 48</li>
+                  <li>39366</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                기차 이용 시
+                <span>SRT</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>수서역에서 탑승 후 김천구미역 하차</li>
+                </ul>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                버스 이용 시
+                <span>고속버스</span>
+              </dt>
+              <dd>
+                <ul>
+                  <li>서울 고속버스 터미널에서 탑승 후 구미 종합 버스 터미널 하차</li>
+                  <li>수원 종합 버스 터미널, 오산역 환승센터에서 탑승 후 공단정류소 하차</li>
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      </div>
+    </article>
+    <? include "../common/sub_footer.html" ?>
+    <!-- <script src="./js/sub1_scroll.js"></script> -->
+  </body>
+</html>

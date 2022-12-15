@@ -1,0 +1,328 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 950px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding-top: 25px;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+
+/* 본문 */
+#content .contentArea {
+  position: relative;
+}
+#content .contentArea::before {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 2700px;
+  background: url(../images/content1/content_01.jpg) no-repeat;
+  position: absolute;
+  left: -400px;
+  top: -335px;
+  z-index: -100;
+}
+#content .contentArea .research {
+  width: 2000px;
+  margin: 100px 0 0 -400px;
+}
+#content .contentArea .research::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .research h3 {
+  width: 700px;
+  float: left;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Roboto", sans-serif;
+  padding: 160px 130px;
+  box-sizing: border-box;
+}
+#content .contentArea .research dl {
+  width: 1300px;
+  float: right;
+  margin-bottom: 100px;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .research dt {
+  width: 1300px;
+  height: 500px;
+  background: url(../images/content1/content_02_1.jpg) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#content .contentArea .research dd {
+  font-size: 1em;
+}
+#content .contentArea .slogan {
+  width: 2000px;
+  margin: 0 0 0 -400px;
+}
+#content .contentArea .slogan::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .slogan p:nth-child(1) {
+  width: 1300px;
+  margin: 0 0 30px 688px;
+  font-size: 11.25em;
+  line-height: 0.9em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+/* @keyframes slide01 {
+  from {
+    transform: translateX(2000px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+#content .contentArea .slogan p:nth-child(2) {
+  width: 1100px;
+  margin-left: 700px;
+  font-size: 1.3em;
+}
+#content .contentArea .develop {
+  width: 2000px;
+  margin: 0 0 0 -400px;
+}
+#content .contentArea .develop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .develop h3 {
+  width: 700px;
+  float: left;
+  font-size: 2.5em;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-family: "Roboto", sans-serif;
+  padding: 210px 110px;
+  box-sizing: border-box;
+}
+#content .contentArea .develop ul {
+  width: 1060px;
+  float: left;
+  padding: 75px 0;
+}
+#content .contentArea .develop ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .develop li:nth-child(1) {
+  height: 400px;
+  margin-bottom: 75px;
+  position: relative;
+}
+#content .contentArea .develop li:nth-child(2) {
+  height: 400px;
+  position: relative;
+}
+#content .contentArea .develop li:nth-child(1) img {
+  float: left;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .develop li:nth-child(2) img {
+  float: right;
+  position: relative;
+  opacity: 0;
+}
+#content .contentArea .develop li:nth-child(1) dl {
+  width: 300px;
+  height: 220px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 210px;
+  top: 90px;
+  padding: 65px 30px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(1) dt {
+  font-size: 1.75em;
+  font-weight: 500;
+  color: #182eae;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(1) dd {
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(2) dl {
+  width: 300px;
+  height: 220px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 210px;
+  top: 90px;
+  padding: 50px 30px;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(2) dt {
+  font-size: 1.75em;
+  font-weight: 500;
+  color: #182eae;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(2) dd {
+  transition: all 0.5s ease-out;
+}
+#content .contentArea .develop li:nth-child(2) span {
+  display: block;
+  margin-top: 10px;
+}
+#content .contentArea .develop li:nth-child(1) a:hover dl {
+  background: #ef495a;
+  transform: translateX(50px);
+}
+#content .contentArea .develop li:nth-child(1) a:hover dt {
+  color: #fff;
+}
+#content .contentArea .develop li:nth-child(1) a:hover dd {
+  color: #fff;
+}
+#content .contentArea .develop li:nth-child(2) a:hover dl {
+  background: #ef495a;
+  transform: translateX(-50px);
+}
+#content .contentArea .develop li:nth-child(2) a:hover dt {
+  color: #fff;
+}
+#content .contentArea .develop li:nth-child(2) a:hover dd {
+  color: #fff;
+}
+
+/* scroll */
+.moveRsDl {
+  animation: moveRsDl 1.5s forwards;
+}
+@keyframes moveRsDl {
+  0%{
+    top: -100px;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+.moveRs1, .moveRs2 {
+  animation: moveRs1 1.5s forwards;
+}
+@keyframes moveRs1 {
+  0%{
+    transform: scaleY(0)rotate(360deg);
+  }
+  100%{
+    transform: scaleY(1)rotate(0);
+  }
+}
+/* .moveRs2 {
+  animation: moveRs2 1.5s forwards;
+}
+@keyframes moveRs2 {
+  0%{
+    transform: scaleY(0)rotate(360deg);
+  }
+  100%{
+    transform: scaleY(1)rotate(0);
+  }
+} */
+.moveSlogan {
+  animation-name: moveSlogan;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes moveSlogan {
+  0%{
+    opacity: 0;
+    right: -20px;
+  }
+  50%{
+    opacity: 1;
+    right: 0;
+  }
+  100%{
+    opacity: 0;
+    right: -20px;
+  }
+}
+
+.moveImg1 {
+  animation: moveImg1 1.5s forwards;
+}
+@keyframes moveImg1 {
+  0%{
+    right: -270px;
+  }
+  100%{
+    opacity: 1;
+    right: 0;
+  }
+}
+.moveImg2 {
+  animation: moveImg2 1.5s forwards;
+}
+@keyframes moveImg2 {
+  0%{
+    left: -270px;
+  }
+  100%{
+    opacity: 1;
+    left: 0;
+  }
+}

@@ -1,0 +1,126 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub3.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 33.33%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(3) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 75%;
+    padding: 20px 12.5% 60px 12.5%;
+}
+
+/* content */
+#content section {
+    width: 90%;
+    padding: 0 5%;
+    position: relative;
+    margin-bottom: 30px;
+}
+#content section::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ccc;
+}
+
+#content .step1 h3,
+#content .step2 h3,
+#content .step3 h3,
+#content .step4 h3,
+#content .step5 h3,
+#content .step6 h3 {
+    font-size: 1.286em;
+    font-weight: 700;
+}
+#content .step1 p,
+#content .step2 p,
+#content .step3 p,
+#content .step4 p,
+#content .step5 p,
+#content .step6 p {
+    font-size: 1em;
+    color: #999;
+    padding-bottom: 170px;
+    width: 60%;
+}
+#content .step1 span,
+#content .step2 span,
+#content .step3 span,
+#content .step4 span,
+#content .step5 span,
+#content .step6 span {
+    display: block;
+    font-size: 1em;
+    font-weight: 600;
+    position: absolute;
+    right: 5%;
+    bottom: -5%;
+}
+#content .step1 span strong,
+#content .step2 span strong,
+#content .step3 span strong,
+#content .step4 span strong,
+#content .step5 span strong,
+#content .step6 span strong {
+    font-size: 10.714em;
+    font-weight: 300;
+    letter-spacing: -7px;
+}

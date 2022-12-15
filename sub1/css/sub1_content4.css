@@ -1,0 +1,564 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 910px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 100px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+#content .contentArea .tabs .tab_menu {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+#content .contentArea .tabs .tab_menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .tabs .tab_menu li {
+  float: left;
+  width: 25%;
+}
+#content .contentArea .tabs .tab_menu li a {
+  display: block;
+  height: 68px;
+  line-height: 68px;
+  font-size: 1.25em;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: #999;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
+#content .contentArea .tabs .tab_menu li:hover a {
+  background: #f5f5f5;
+}
+#content .contentArea .tabs .tab_menu li.current1 a {
+  color: #0081cc;
+}
+
+#content .contentArea .tabs .tab_menu li.current1 a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  border: 1px solid #0081cc;
+}
+
+/* target 기능 */
+/* #content .contentArea .cont {
+  display: none;
+}
+#content .contentArea .cont:target {
+  display: block;
+} */
+.contlist {display: none;}
+
+
+/* 첫번째 맵 */
+#content .contentArea .map1 #company1 {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map1 .location {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map1 .location dl {
+  padding: 25px 0;
+}
+#content .contentArea .map1 .location dl:nth-of-type(2) {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+#content .contentArea .map1 .location dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .map1 .location dt {
+  width: 200px;
+  float: left;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #0081cc;
+  position: relative;
+}
+#content .contentArea .map1 .location dt span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+#content .contentArea .map1 .location dl:nth-of-type(1) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+}
+#content .contentArea .map1 .location dl:nth-of-type(2) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 7%;
+}
+#content .contentArea .map1 .location dl:nth-of-type(3) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 187px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+#content .contentArea .map1 .location dd {
+  width: 1000px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+#content .contentArea .map1 .location dl:nth-of-type(1) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map1 .location dl:nth-of-type(2) dd ul {
+  padding-top: 50px;
+}
+#content .contentArea .map1 .location dl:nth-of-type(3) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map1 .location dl dd ul li {
+  margin: 7px 0;
+}
+#content .contentArea .map1 .location dl:nth-of-type(3) dd ul li {
+  margin: 8.5px 0;
+}
+.map1 .line2 {
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  background: url(../images/content4/line2.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map1 .line2_1 {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: url(../images/content4/line2_1.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map1 .bus1 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus1.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.map1 .bus2 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus2.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map1 .bus3 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus3.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map1 .bus4 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus4.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map1 .bus5 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus5.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* 두번째 맵 */
+
+#content .contentArea .map2 #company2 {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map2 .location {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map2 .location dl {
+  padding: 25px 0;
+}
+#content .contentArea .map2 .location dl:nth-of-type(2) {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+#content .contentArea .map2 .location dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .map2 .location dt {
+  width: 200px;
+  float: left;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #0081cc;
+  position: relative;
+}
+#content .contentArea .map2 .location dt span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+#content .contentArea .map2 .location dl:nth-of-type(1) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+}
+#content .contentArea .map2 .location dl:nth-of-type(2) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 50px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 7%;
+}
+#content .contentArea .map2 .location dl:nth-of-type(3) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 115px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 5%;
+}
+#content .contentArea .map2 .location dd {
+  width: 1000px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+#content .contentArea .map2 .location dl:nth-of-type(1) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map2 .location dl:nth-of-type(2) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map2 .location dl:nth-of-type(3) dd ul {
+  padding-top: 35px;
+}
+#content .contentArea .map2 .location dl dd ul li {
+  margin: 7px 0;
+}
+#content .contentArea .map2 .location dl:nth-of-type(3) dd ul li {
+  margin: 8.5px 0;
+}
+.map2 .line4 {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: url(../images/content4/line4.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.map2 .bus1 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus1.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map2 .bus3 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus3.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+.map2 .bus5 {
+  width: 55px;
+  height: 30px;
+  background: url(../images/content4/bus5.png) no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  color: #fff;
+}
+/* 세번째 맵 */
+
+#content .contentArea .map3 #company3 {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map3 .location {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map3 .location dl {
+  padding: 25px 0;
+}
+#content .contentArea .map3 .location dl:nth-of-type(2) {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+#content .contentArea .map3 .location dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .map3 .location dt {
+  width: 200px;
+  float: left;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #0081cc;
+  position: relative;
+}
+#content .contentArea .map3 .location dt span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+#content .contentArea .map3 .location dl:nth-of-type(1) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+}
+#content .contentArea .map3 .location dl:nth-of-type(2) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+#content .contentArea .map3 .location dl:nth-of-type(3) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+#content .contentArea .map3 .location dd {
+  width: 1000px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+#content .contentArea .map3 .location dl:nth-of-type(1) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map3 .location dl:nth-of-type(2) dd ul {
+  padding-top: 37px;
+}
+#content .contentArea .map3 .location dl:nth-of-type(3) dd ul {
+  padding-top: 37px;
+}
+#content .contentArea .map3 .location dl dd ul li {
+  margin: 7px 0;
+}
+#content .contentArea .map3 .location dl:nth-of-type(3) dd ul li {
+  margin: 8.5px 0;
+}
+/* 네번째 맵 */
+
+#content .contentArea .map4 #company4 {
+  width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map4 .location {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+#content .contentArea .map4 .location dl {
+  padding: 25px 0;
+}
+#content .contentArea .map4 .location dl:nth-of-type(2) {
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+#content .contentArea .map4 .location dl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#content .contentArea .map4 .location dt {
+  width: 200px;
+  float: left;
+  font-weight: 700;
+  font-size: 1.5em;
+  color: #0081cc;
+  position: relative;
+}
+#content .contentArea .map4 .location dt span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+#content .contentArea .map4 .location dl:last-child dt span {
+  padding-top: 15px;
+}
+#content .contentArea .map4 .location dl:nth-of-type(1) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 100px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+}
+#content .contentArea .map4 .location dl:nth-of-type(2) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 10%;
+}
+#content .contentArea .map4 .location dl:nth-of-type(3) dt::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 30px;
+  background: #ddd;
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+}
+#content .contentArea .map4 .location dd {
+  width: 1000px;
+  float: right;
+  font-size: 1.25em;
+  font-weight: 400;
+  padding-left: 60px;
+  box-sizing: border-box;
+}
+#content .contentArea .map4 .location dl:nth-of-type(1) dd ul {
+  padding-top: 40px;
+}
+#content .contentArea .map4 .location dl:nth-of-type(2) dd ul {
+  padding-top: 37px;
+}
+#content .contentArea .map4 .location dl:nth-of-type(3) dd ul {
+  padding-top: 33px;
+}
+#content .contentArea .map4 .location dl dd ul li {
+  margin: 7px 0;
+}
+#content .contentArea .map4 .location dl:nth-of-type(3) dd ul li {
+  margin: 8.5px 0;
+}

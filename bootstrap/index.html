@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon02.png">
+    <link rel="apple-touch-icon-precomposed" href="app_icon.png">
+    <link rel="apple-touch-startup-image" href="startup.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/prefixfree.min.js"></script>
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+</head>
+<body data-spy="scroll" data-target="#headerArea" data-offset="10">
+    <div id="skipNav">
+        <a href="#content">본문 바로가기</a>
+        <a href="#navbar">글로벌 네비게이션 바로가기</a>
+    </div>
+    <div class="pageIntro">
+        <div>
+            <img src="./images/intro01_1.gif" class="img-responsive" alt="">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <header id="headerArea">
+            <h1><a href="index.html">Audi</a></h1>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <h2 class="hidden">Global Navigation Area</h2>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li data-toggle data-target><a class="btn1" href="#company"><h3>Company</h3></a></li>
+                        <li data-toggle data-target><a class="btn2" href="#models"><h3>Models</h3></a></li>
+                        <li data-toggle data-target><a class="btn3" href="#service"><h3>Service</h3></a></li>
+                        <li data-toggle data-target><a class="btn4" href="#sus"><h3>Sustainability</h3></a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </nav>
+        </header>
+
+        <div class="main_visual swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/main02_1.jpg" alt="">
+                    <div class="caption">
+                        <strong>Brand Audi</strong>
+                        <p>Meet a new world through progress</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main04_1.jpg" alt="">
+                    <div class="caption">
+                        <strong>Electrification</strong>
+                        <p>The Audi e-tron S dynamic driving experience</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/main06_1.jpg" alt="">
+                    <div class="caption">
+                        <strong>Charm at first sight</strong>
+                        <p>Audi's outstanding performance beautifully</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <article id="content">
+            <h2 class="hidden">본문 콘텐츠영역</h2>
+            <section class="companyMain" id="company">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-offset-1 col-xs-2">
+                        <h3>Company</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5 col-md-offset-1 col-sm-11 col-xs-offset-1 col-xs-10">
+                        <img src="./images/company01.jpg" width="90%" alt="">
+                    </div>
+                    <div class="companyRight col-md-5 col-md-offset-0 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <p>The history of AUDI AG extends back to the 19th century. Find out more about the great personalities from the company’s 100-plus years of history. Learn about the fascinating evolution of the various models.</p>
+                        <p>Under the company slogan of “Advancement through technology,” Audi is striving to create value for the Audi brand in the by expanding its first-class products and dealer network and satisfying customer satisfaction.</p>
+                        <p>We will provide our customers with only the best products through To meet the increasingly diverse needs of customers, Plans to secure a more detailed model lineup through the launch of new models.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="modelsMain" id="models">
+                <div class="row models01">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3>Models</h3>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 col-xs-offset-1 col-xs-10">
+                        <p>The future of mobility is not complete with technology alone. A new idea or design starts with communication with various people.</p>
+                        <p> To this end, Audi draws inspiration from the insights of understanding the world and shapes the future.</p>
+                    </div>
+                </div>
+                <div class="modelsPop swiper-container swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                        <a class="model1" href="#">
+                            <img src="./images/etronGT.png" alt="">
+                            <p>Audi e-tron GT</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model2" href="#">
+                            <img src="./images/etron.png" alt="">
+                            <p>Audi e-tron</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model3" href="#">
+                            <img src="./images/A3.png" alt="">
+                            <p>Audi A3</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model4" href="#">
+                            <img src="./images/A4.png" alt="">
+                            <p>Audi A4</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model5" href="#">
+                            <img src="./images/A5.png" alt="">
+                            <p>Audi A5</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model6" href="#">
+                            <img src="./images/A6.png" alt="">
+                            <p>Audi A6</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model7" href="#">
+                            <img src="./images/A7.png" alt="">
+                            <p>Audi A7</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="model8" href="#">
+                                <img src="./images/A8.png" alt="">
+                                <p>Audi A8</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model9" href="#">
+                            <img src="./images/Q2.png" alt="">
+                            <p>Audi Q2</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model10" href="#">
+                            <img src="./images/Q3.png" alt="">
+                            <p>Audi Q3</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model11" href="#">
+                            <img src="./images/Q4.png" alt="">
+                            <p>Audi Q4</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model12" href="#">
+                            <img src="./images/Q5.png" alt="">
+                            <p>Audi Q5</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model13" href="#">
+                            <img src="./images/Q7.png" alt="">
+                            <p>Audi Q7</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model14" href="#">
+                            <img src="./images/Q8.png" alt="">
+                            <p>Audi Q8</p>
+                        </a>
+                        </div>
+                        <div class="swiper-slide">
+                        <a class="model15" href="#">
+                            <img src="./images/R8.png" alt="">
+                            <p>Audi R8</p>
+                        </a>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </section>
+            <div class="modelPop_bg"></div>
+            <div class="popMain"></div>
+
+            <section class="serviceMain" id="service">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                        <h3>Service</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                        <p>Meet Audi's customer satisfaction service.</p>
+                    </div>
+                </div>
+                <div class="row oneLine">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="tabBtns">
+                                <a class="current zone1" href="#">Process1</a>
+                                <a class="zone2" href="#">Process2</a>
+                                <a class="zone3" href="#">Technician</a>
+                                <a class="zone4" href="#">Advisor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row serviceZone">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <img src="./images/service01.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-sm-offset-0 col-xs-offset-1 col-xs-10 leftPara">
+                        <strong>Service Core Process</strong>
+                        <p>Audi's global standard customer service process, which is universally applicable.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="row serviceZone">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <img src="./images/service03.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-sm-offset-0 col-xs-offset-1 col-xs-10 leftPara">
+                        <strong>Maintenance Description Process</strong>
+                        <p>We provide a new process introduced to help customers fully understand the maintenance history.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="row serviceZone">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <img src="./images/service02.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-sm-offset-0 col-xs-offset-1 col-xs-10 leftPara">
+                        <strong>Technician</strong>
+                        <p>Vehicles are inspected by specialists trained through the Audi global standard process to provide the best possible maintenance.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+                <div class="row serviceZone">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <img src="./images/service04.jpg" width="100%" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-sm-offset-0 col-xs-offset-1 col-xs-10 leftPara">
+                        <strong>Service advisor</strong>
+                        <p>In order to provide the best service, only professionals trained through the Audi global standard process are with customers.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="susMain" id="sus">
+                <div class="row models02">
+                    <div class="col-md-10 col-md-offset-1">
+                        <h3>Sustainability</h3>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 col-sm-offset-1 col-sm-10 col-xs-offset-1 col-xs-10">
+                        <p>Globally, electric mobility is the key to sustainable and environmentally friendly mobility.</p>
+                        <p>This is why Audi wants to make our goal of introducing a pure electric vehicle with zero CO2 emissions by 2025.<br> 
+                            For us, electric mobility is an essential component of creating an eco-friendly and sustainable transportation system.</p>
+                    </div>
+                </div>
+
+                <div class="row susZone">
+                    <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <img src="./images/sus01.jpg" class="img-responsive susImg01" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-5 col-xs-10 leftPara2">
+                        <strong>Electric mobility for long distance</strong>
+                        <strong>driving in cooperation with IONITY</strong>
+                        <p>With the launch of its first all-electric model, the e-tron, Audi launched a home charging system and an external charging solution. Building a charging network is essential for long-distance driving of electric vehicles.</p>
+                        <p>Audi is participating in IONITY's electric vehicle super-fast charging business, and is contributing to the expansion of the external charging system. IONITY is building a charging network on European roads and plans to install around 400 Fast Charging Stations (HPCs) in 25 countries by 2020. The Audi e-tron charging service allows customers to use the IONITY network at a discounted rate and access most charging facilities in Europe with one card.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="row susFix">
+                <div class="col-md-12 fixMain">
+                    <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-offset-1 col-xs-offset-1">
+                        <strong>New TFSI e model line</strong>
+                    </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-md-5 col-md-offset-2 col-sm-8 col-sm-offset-1 col-xs-offset-1 col-xs-10">
+                        <p>Among Audi models, e-tron refers to pure electric vehicles, and plug-in models are called “TFSI e”. The plug-in hybrid model can be driven in two ways. For short distances, electric driving using a compact battery is possible, and for long-distance driving, the use of an internal combustion engine is possible.</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="row susLast">
+                    <div class="col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-offset-1 col-xs-4">
+                        <strong>Quiet running</strong>
+                        <p>While driving an electric vehicle in the city center, it is possible to drive quietly enough to not even feel the noise from the outside as well as the inside. Even while driving at high speed, only the wind and road noise are heard. There is no carbon emission generated during driving.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4">
+                        <strong>Worry free mileage</strong>
+                        <p>Switch on the engine. At first it works as an auxiliary role for the electric motor and completely converts it to an internal combustion engine operation, which ensures a sufficient driving range. While stopped, you can refuel as usual and continue driving.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+        <footer id="footerArea">
+            <span></span>
+            <p>&copy; 2022 Audi of America. All rights reserved.</p>
+            <p>Audi of America takes efforts to ensure the accuracy of information on the general vehicle information pages. <br>Models are shown for illustration purposes only and may include 
+               features that are not available on the US model. <br>As errors may occur or availability may change, please see dealer for complete details and current model specifications.</p>
+        </footer>
+        <a class="topMove" href="#">
+            <p>
+                <span></span>
+            </p>
+        </a>
+    </div>
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+</html>

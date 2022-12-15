@@ -1,0 +1,377 @@
+/* 기업개요 본문영역 */
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .titleArea {
+  text-align: center;
+}
+#content .titleArea .lineMap {
+  margin: 40px 0 0 960px;
+}
+#content .lineMap span a {
+  color: #666;
+}
+#content .lineMap span:nth-of-type(3) a {
+  font-weight: 500;
+  color: #333;
+}
+#content .titleArea h2 {
+  font-size: 3.125em;
+  margin: 100px 0;
+  position: relative;
+}
+#content .titleArea h2::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  bottom: -130%;
+  background: #999;
+}
+#content .intro {
+  padding: 25px 0 100px 0;
+  font-size: 1.5em;
+  text-align: center;
+}
+#content .blue {
+  color: #0081cc;
+}
+
+/* 본문 영역 */
+#content .chemicalInner1 {
+  display: flex;
+  flex-direction: column;
+}
+#content .chemicalInner1 .chemicalImg1 {
+  margin-top: 50px;
+}
+#content .chemicalInner1 .chemicalImg1 img {
+  border-top-left-radius: 40px;
+  filter: grayscale(100);
+  transition: all 0.5s ease-out;
+}
+#content .chemicalInner1 .chemicalImg1 img:hover {
+  filter: grayscale(0);
+}
+#content .chemicalInner1 h3 {
+  font-size: 2.5em;
+}
+#content .chemicalInner1 dl {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#content .chemicalInner1 dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #0081cc;
+  width: 200px;
+}
+#content .chemicalInner1 dd {
+  width: 840px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.125em;
+}
+#content .chemicalInner1 dd span {
+  display: block;
+  font-size: 1.335em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  top: -3%;
+}
+/* 두번째 컨텐츠 */
+#content .chemicalInner2 {
+  display: flex;
+  flex-direction: column;
+}
+#content .chemicalInner2 .chemicalImg2 {
+  margin-top: 50px;
+}
+#content .chemicalInner2 .chemicalImg2 img {
+  border-top-right-radius: 40px;
+  position: relative;
+  left: -400px;
+  filter: grayscale(100);
+  transition: all 0.5s ease-out;
+}
+#content .chemicalInner2 .chemicalImg2 img:hover {
+  filter: grayscale(0);
+}
+#content .chemicalInner2 h3 {
+  font-size: 2.5em;
+  margin-top: 50px;
+  position: relative;
+  right: -1050px;
+}
+#content .chemicalInner2 dl {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#content .chemicalInner2 dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #0081cc;
+  width: 200px;
+}
+#content .chemicalInner2 dd {
+  width: 840px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.125em;
+}
+#content .chemicalInner2 dd span {
+  display: block;
+  font-size: 1.335em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  top: -2%;
+}
+/* 세번째 컨텐츠 */
+#content .chemicalInner3 {
+  display: flex;
+  flex-direction: column;
+}
+#content .chemicalInner3 .chemicalImg3 {
+  margin-top: 50px;
+}
+#content .chemicalInner3 .chemicalImg3 img {
+  border-top-left-radius: 40px;
+  filter: grayscale(100);
+  transition: all 0.5s ease-out;
+}
+#content .chemicalInner3 .chemicalImg3 img:hover {
+  filter: grayscale(0);
+}
+#content .chemicalInner3 h3 {
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+#content .chemicalInner3 dl {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#content .chemicalInner3 dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #0081cc;
+  width: 200px;
+}
+#content .chemicalInner3 dd {
+  width: 840px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.125em;
+}
+#content .chemicalInner3 dd span {
+  display: block;
+  font-size: 1.335em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  top: -1%;
+}
+/* 네번째 컨텐츠 */
+#content .chemicalInner4 {
+  display: flex;
+  flex-direction: column;
+}
+#content .chemicalInner4 .chemicalImg4 {
+  margin-top: 50px;
+}
+#content .chemicalInner4 .chemicalImg4 img {
+  border-top-right-radius: 40px;
+  position: relative;
+  left: -400px;
+  filter: grayscale(100);
+  transition: all 0.5s ease-out;
+}
+#content .chemicalInner4 .chemicalImg4 img:hover {
+  filter: grayscale(0);
+}
+#content .chemicalInner4 h3 {
+  font-size: 2.5em;
+  margin-top: 50px;
+  position: relative;
+  right: -1050px;
+}
+#content .chemicalInner4 dl {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#content .chemicalInner4 dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #0081cc;
+  width: 200px;
+}
+#content .chemicalInner4 dd {
+  width: 840px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.125em;
+}
+#content .chemicalInner4 dd span {
+  display: block;
+  font-size: 1.335em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  top: -1.5%;
+}
+/* 다섯번째 컨텐츠 */
+#content .chemicalInner5 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+#content .chemicalInner5 .chemicalImg5 {
+  margin-top: 50px;
+}
+#content .chemicalInner5 .chemicalImg5 img {
+  border-top-left-radius: 40px;
+  filter: grayscale(100);
+  transition: all 0.5s ease-out;
+}
+#content .chemicalInner5 .chemicalImg5 img:hover {
+  filter: grayscale(0);
+}
+#content .chemicalInner5 h3 {
+  font-size: 2.5em;
+  margin-top: 50px;
+}
+#content .chemicalInner5 dl {
+  display: flex;
+  margin: 50px 0 0 0;
+}
+#content .chemicalInner5 dt {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  color: #0081cc;
+  width: 200px;
+}
+#content .chemicalInner5 dd {
+  width: 840px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 1.125em;
+}
+#content .chemicalInner5 dd span {
+  display: block;
+  font-size: 1.335em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+  top: -1.5%;
+}
+
+/* scroll */
+#content .chemicalInner1 .chemicalImg1 {
+  position: relative;
+  opacity: 0;
+}
+#content .chemicalInner2 .chemicalImg2 {
+  position: relative;
+  opacity: 0;
+}
+#content .chemicalInner3 .chemicalImg3 {
+  position: relative;
+  opacity: 0;
+}
+#content .chemicalInner4 .chemicalImg4 {
+  position: relative;
+  opacity: 0;
+}
+#content .chemicalInner5 .chemicalImg5 {
+  position: relative;
+  opacity: 0;
+}
+#content .chemicalInner1 dl, .chemicalInner2 dl, .chemicalInner3 dl, .chemicalInner4 dl, .chemicalInner5 dl {
+  position: relative;
+  opacity: 0;
+}
+
+
+
+/* scroll animation */
+.moveImg1 {
+  animation: moveImg1 1.5s forwards;
+}
+@keyframes moveImg1 {
+  0%{
+    right: -1000px
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}
+.moveImg2 {
+  animation: moveImg2 1.5s forwards;
+}
+@keyframes moveImg2 {
+  0%{
+    left: -1000px
+  }
+  100%{
+    left: 0;
+    opacity: 1;
+  }
+}
+.moveImg3 {
+  animation: moveImg3 1.5s forwards;
+}
+@keyframes moveImg3 {
+  0%{
+    right: -1000px
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}
+.moveImg4 {
+  animation: moveImg4 1.5s forwards;
+}
+@keyframes moveImg4 {
+  0%{
+    left: -1000px
+  }
+  100%{
+    left: 0;
+    opacity: 1;
+  }
+}
+.moveImg5 {
+  animation: moveImg5 1.5s forwards;
+}
+@keyframes moveImg5 {
+  0%{
+    right: -1000px
+  }
+  100%{
+    right: 0;
+    opacity: 1;
+  }
+}
+.moveDl {
+  animation: moveDl 1s forwards;
+}
+@keyframes moveDl {
+  0%{
+    top: 100px
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,105 @@
+<!-- 헤더 공통 요소 -->
+<script src="../common/js/jquery-1.12.4.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/jquery.easing.1.3.js"></script>
+
+<div id="skipNav">
+  <a href="#content">본문바로가기</a>
+  <a href="#gnb">글로벌네비게이션바로가기</a>
+</div>
+
+<div class="wrap">
+  <header id="headerArea">
+    <div class="headerInner">
+      <h1>
+        <a href="../index.html">코오롱 인더스트리 로고</a>
+      </h1>
+      <div class="topMenu">
+        <?
+          @extract($_GET); 
+          @extract($_POST); 
+          @extract($_SESSION); 
+        
+          if(!$userid){ //세션변수 사용
+        ?>
+        <ul>
+          <li>
+            <a href="../login/login_form.php">LOGIN</a>
+          </li>
+          <li>
+            <a href="../member/join.html">JOIN</a>
+          </li>
+        </ul>
+        <?
+          } else {
+        ?>
+        <ul>
+          <li class="logIn">
+            <!-- <?=$usernick?> (level:<?=$userlevel?>)&nbsp; -->
+            <a href="../login/logout.php">LOGOUT</a>
+          </li>
+          <li class="logIn2">
+            <a href="../member/member_form_modify.php">MY INFO</a>
+          </li>
+        </ul>
+        <?
+          }
+        ?>
+      </div>
+      <nav id="gnb">
+        <h2 class="hidden">글로벌네비게이션영역</h2>
+        <ul class="dropdownmenu">
+          <li class="m1 menu">
+            <h3><a class="depth1" href="../sub1/sub1_1.html">기업정보</a></h3>
+            <ul>
+              <li><a href="../sub1/sub1_1.html">기업개요</a></li>
+              <li><a href="../sub1/sub1_2.html">CEO 인사말</a></li>
+              <li><a href="../sub1/sub1_3.html">연혁</a></li>
+              <li><a href="../sub1/sub1_4.html">오시는 길</a></li>
+            </ul>
+          </li>
+          <li class="m2 menu">
+            <h3><a class="depth1" href="../sub2/sub2_1.html">사업분야</a></h3>
+            <ul>
+              <li><a href="../sub2/sub2_1.html">산업자재</a></li>
+              <li><a href="../sub2/sub2_2.html">필름</a></li>
+              <li><a href="../sub2/sub2_3.html">화학</a></li>
+              <li><a href="../sub2/sub2_4.html">패션</a></li>
+            </ul>
+          </li>
+          <li class="m3 menu">
+            <h3><a class="depth1" href="../sub3/sub3_1.html">연구개발</a></h3>
+            <ul>
+              <li><a href="../sub3/sub3_1.html">R&D 개요</a></li>
+              <li><a href="../sub3/sub3_2.html">연구분야</a></li>
+            </ul>
+          </li>
+          <li class="m4 menu">
+            <h3><a class="depth1" href="../sub4/sub4_1.html">정도경영</a></h3>
+            <ul>
+              <li><a href="../sub4/sub4_1.html">경영이념</a></li>
+              <li><a href="../sub4/sub4_2.html">경영방침</a></li>
+              <li><a href="../sub4/sub4_3.html">코오롱정신</a></li>
+            </ul>
+          </li>
+          <li class="m5 menu">
+            <h3><a class="depth1" href="../sub5/sub5_1.html">인재채용</a></h3>
+            <ul>
+              <li><a href="../sub5/sub5_1.html">인재상</a></li>
+              <li><a href="../sub5/sub5_2.html">복리후생</a></li>
+              <li><a href="../sub5/sub5_3.html">채용절차</a></li>
+            </ul>
+          </li>
+          <li class="m6 menu">
+            <h3><a class="depth1" href="../sub6/sub6_1.html">홍보센터</a></h3>
+            <ul>
+              <li><a href="../sub6/sub6_1.html">뉴스룸</a></li>
+              <li><a href="../sub6/sub6_2.html">미디어센터</a></li>
+              <li><a href="../sub6/sub6_3.html">공지사항</a></li>
+              <li><a href="../sub6/sub6_4.html">FAQ & 문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>

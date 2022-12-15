@@ -1,0 +1,49 @@
+{
+    "mediaCenter":[
+        {
+            "nHref": "./sub6/sub6_2.html",
+            "nclassName": "mobil",
+            "nSrc": "./images/mediacenter_02.jpg",
+            "nAlt": "대학생 서포터즈 8기",
+            "nDt":"예약은 빠르게, 가격은 확실하게!",
+            "nDd":"안녕하세요! 코오롱 소셜미디어 대학생 서포터즈 8기 옥지연입니다.",
+            "nSpan":"2019-06-25"
+        },
+        {
+            "nHref": "./sub6/sub6_2.html",
+            "nclassName": "kuron",
+            "nSrc": "./images/mediacenter_03.jpg",
+            "nAlt": "광고 캠페인",
+            "nDt":"쿠론, 2019 SS 시즌 광고 캠페인 <br />'SHINE BRIGHT 10'",
+            "nDd":"쿠론의 새로운 광고 캠페인을 만나보세요!",
+            "nSpan":"2019-05-14"
+        },
+        {
+            "nHref": "./sub6/sub6_2.html",
+            "nclassName": "ecoLongLong",
+            "nSrc": "./images/mediacenter_04.jpg",
+            "nAlt": "그린 탐험대",
+            "nDt":"서울식물원 프로그램 '세계를 <br />지키는 그린 탐험대' 진행",
+            "nDd":"에코 롱롱 큐브의 '세계를 지키는 그린 탐험대'를 <br />진행합니다.",
+            "nSpan":"2019-06-25"
+        },
+        {
+            "nHref": "./sub6/sub6_2.html",
+            "nclassName": "stay",
+            "nSrc": "./images/mediacenter_05.jpg",
+            "nAlt": "올모스트홈 스테이 고창",
+            "nDt":"에피그램, 올모스트홈 스테이 고창",
+            "nDd":"에피그램, 올모스트홈 스테이 고창 오픈",
+            "nSpan":"2019-09-10"
+        },
+        {
+            "nHref": "./sub6/sub6_2.html",
+            "nclassName": "golf",
+            "nSrc": "./images/mediacenter_06.jpg",
+            "nAlt": "골프 신상품",
+            "nDt":"골프브랜드 신상품 소개",
+            "nDd":"코오롱 스포츠의 골프브랜드 신상품을 소개합니다.",
+            "nSpan":"2019-09-10"
+        }
+    ]
+}

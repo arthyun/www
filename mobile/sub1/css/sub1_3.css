@@ -1,0 +1,248 @@
+.main {
+    height: 200px;
+    background: url(../images/main_sub1.jpg) center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.main h3 {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 1.714em;
+    font-weight: normal;
+    color: #fff;
+}
+.subNav {
+    position: relative;
+    top: -24px;
+}
+.subNav ul {
+    width: 90%;
+    display: flex;
+    padding: 0 5%;
+}
+.subNav ul li {
+    width: 25%;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #fff;
+}
+.subNav ul li:nth-child(1) {
+    border-radius: 7px 0 0 5px;
+}
+.subNav ul li:nth-child(4) {
+    border-radius: 0 7px 5px 0;
+}
+.subNav ul li a {
+    display: block;
+    padding: 13px 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 1em;
+    color: #555;
+}
+.subNav ul li.current {
+    background: #0081cc;
+    border: 0;
+}
+.subNav ul li.current a {
+    font-weight: 700;
+    color: #fff;
+}
+
+.blue {color: #0081cc;}
+
+#content .subTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+}
+#content .subTitle h2 {
+    font-size: 1.575em;
+    font-weight: 700;
+}
+#content .subTitle p {
+    width: 70%;
+    padding: 20px 15% 60px 15%;
+}
+
+/* content */
+#content .chemical1Main {
+    width: 100%;
+}
+#content .chemical1Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chemical1Main .chemical1Inner {
+    margin-top: 20px;
+    text-align: justify;
+}
+#content .chemical1Main .chemical1Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chemical1Main .chemical1Inner span {
+    width: 90%;
+    padding: 5% 0 0 5%;
+    color: #182eae;
+    word-spacing: -1px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.145em;
+}
+#content .chemical1Main .chemical1Inner p {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .chemical2Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .chemical2Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chemical2Main .chemical2Inner {
+    margin-top: 20px;
+    text-align: justify;
+}
+#content .chemical2Main .chemical2Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chemical2Main .chemical2Inner span {
+    width: 90%;
+    padding: 5% 0 0 5%;
+    color: #182eae;
+    word-spacing: -1px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.145em;
+}
+#content .chemical2Main .chemical2Inner p {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .chemical3Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .chemical3Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chemical3Main .chemical3Inner {
+    margin-top: 20px;
+    text-align: justify;
+}
+#content .chemical3Main .chemical3Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chemical3Main .chemical3Inner span {
+    width: 90%;
+    padding: 5% 0 0 5%;
+    color: #182eae;
+    word-spacing: -1px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.145em;
+}
+#content .chemical3Main .chemical3Inner p {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .chemical4Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .chemical4Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chemical4Main .chemical4Inner {
+    margin-top: 20px;
+    text-align: justify;
+}
+#content .chemical4Main .chemical4Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chemical4Main .chemical4Inner span {
+    width: 90%;
+    padding: 5% 0 0 5%;
+    color: #182eae;
+    word-spacing: -1px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.145em;
+}
+#content .chemical4Main .chemical4Inner p {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -1px;
+}
+
+#content .chemical5Main {
+    width: 100%;
+    margin-top: 40px;
+}
+#content .chemical5Main h3 {
+    width: 90%;
+    padding: 0 5%;
+    font-size: 1.429em;
+    font-weight: bold;
+    position: relative;
+}
+#content .chemical5Main .chemical5Inner {
+    margin-top: 20px;
+    text-align: justify;
+}
+#content .chemical5Main .chemical5Inner img {
+    width: 100%;
+    /* height: 220px;
+    object-fit: cover; */
+}
+#content .chemical5Main .chemical5Inner span {
+    width: 90%;
+    padding: 5% 0 0 5%;
+    color: #182eae;
+    word-spacing: -1px;
+    display: inline-block;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.145em;
+}
+#content .chemical5Main .chemical5Inner p {
+    width: 90%;
+    padding: 10px 5% 0 5%;
+    word-spacing: -1px;
+}

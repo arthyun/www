@@ -1,0 +1,540 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+address {
+  font-style: normal;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+.hidden {
+  display: block;
+  position: absolute;
+  left: -1000%;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  color: #fff;
+}
+#skipNav {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 50;
+}
+#skipNav a {
+  display: block;
+  height: 0.1px;
+  margin-bottom: 1px;
+  font-size: 1.2em;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+}
+#skipNav a:hover,
+#skipNav a:focus,
+#skipNav a:active {
+  height: auto;
+  padding: 10px 0;
+  background: #0081cc;
+}
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  /* border: 2px solid red; */
+}
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+/* header 공통영역 */
+#headerArea {
+  /* background: #fff; */
+  /* background: rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  height: 210px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  transition: background 0.5s;
+}
+/* on */
+#headerArea.on {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+}
+#headerArea.on h1 a {
+  background-image: url(../images/Logo_color.png);
+}
+#headerArea.on .topMenu ul > li a {
+  color: #666;
+}
+#headerArea.on .topMenu ul > li:hover a {
+  color: #0081cc;
+}
+#headerArea.on .topMenu ul > li:nth-child(1)::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #ef495a;
+  position: absolute;
+  left: 16%;
+  top: -10px;
+  display: none;
+}
+#headerArea.on .topMenu ul > li:nth-child(1):hover::before {
+  display: block;
+}
+#headerArea.on .topMenu ul > li:nth-child(2)::before {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background: #ef495a;
+  position: absolute;
+  left: 85%;
+  top: -10px;
+  display: none;
+}
+#headerArea.on .topMenu ul > li.logIn2::before {
+  position: absolute;
+  left: 80%;
+  top: -10px;
+}
+
+
+#headerArea.on .topMenu ul > li:nth-child(2):hover::before {
+  display: block;
+}
+
+#headerArea.on .topMenu ul > li:nth-child(1)::after {
+  background: #666;
+}
+#headerArea.on .dropdownmenu > li a.depth1 {
+  color: #333;
+}
+#headerArea.on .dropdownmenu > li:hover h3 a {
+  color: #0081cc;
+}
+#headerArea.on .dropdownmenu > li ul li:hover a {
+  font-weight: 500;
+  color: #0081cc;
+}
+
+#headerArea .headerInner {
+  width: 1200px;
+  margin: 0 auto;
+}
+#headerArea h1 {
+  float: left;
+  margin: 60px 0 0 400px;
+}
+#headerArea h1 a {
+  display: block;
+  width: 400px;
+  height: 32px;
+  text-indent: -999px;
+  overflow: hidden;
+  /* background: url(/common/images/Logo_color.png) no-repeat left top; */
+  background: url(../images/Logo_white.png) no-repeat left top;
+  background-position: center;
+  transition: background 0.5s;
+}
+#headerArea .topMenu {
+  float: right;
+  position: relative;
+  margin-top: 70px;
+  margin-right: 65px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.938em;
+  font-weight: 700;
+}
+#headerArea .topMenu ul {
+  display: flow-root;
+  overflow: hidden;
+}
+#headerArea .topMenu li {
+  float: left;
+  /* position: relative; */
+}
+#headerArea .topMenu li a {
+  display: block;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+#headerArea .topMenu li:nth-child(2) {
+  margin-left: 44px;
+}
+#headerArea .topMenu li:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 13px;
+  /* background-color: #666; */
+  background-color: #fff;
+  position: absolute;
+  right: 54px;
+  top: 2px;
+  transition: all 0.5s ease-out;
+}
+#headerArea .topMenu li.logIn::after {
+  position: absolute;
+  right: 80px;
+  top: 2px;
+}
+
+
+#gnb {
+  clear: both;
+  width: 1200px;
+  font-size: 1.25em;
+}
+#gnb ul.dropdownmenu {
+  float: left;
+  width: 100%;
+  display: flow-root;
+  margin-top: 45px;
+}
+#gnb ul.dropdownmenu li.menu {
+  float: left;
+  width: 16.66%;
+  position: relative;
+}
+#gnb ul.dropdownmenu li a.depth1 {
+  display: block;
+  padding: 15px 0;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+  font-weight: 500;
+}
+
+/* 2depth */
+#gnb ul.dropdownmenu li ul {
+  width: 100%;
+  height: 175px;
+  position: absolute;
+  top: 59px;
+  left: 0;
+  padding: 10px 0;
+  line-height: 2em;
+  display: none;
+}
+#gnb ul.dropdownmenu li ul li {
+  transition: all 0.3s ease-out;
+}
+#gnb ul.dropdownmenu li ul li a {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.85em;
+  transition: color 0.3s;
+  color: #666;
+}
+
+#headerArea #gnb ul.dropdownmenu li a.depth1::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  background: #ef495a;
+  /* background: rgba(216, 39, 35, 0.6); */
+  transition: all 0.3s ease;
+}
+#headerArea #gnb ul.dropdownmenu li:hover a.depth1::before {
+  width: 110px;
+  left: 23%;
+}
+
+/* footer 공통영역 */
+#footerArea {
+  background: #fff;
+  width: 100%;
+  border-top: 1px solid #666;
+  padding-bottom: 50px;
+}
+#footerArea .footerInner {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+#footerArea .footerInner img {
+  float: left;
+  margin-top: 50px;
+}
+#footerArea .footerInner .footerTop {
+  width: 1200px;
+  padding: 30px 0 15px 0;
+  overflow: hidden;
+}
+#footerArea .footerInner .footerTop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footerArea .footerLeftTop {
+  float: left;
+  font-size: 1em;
+  font-weight: 500;
+}
+#footerArea .footerLeftTop li {
+  float: left;
+  margin-right: 40px;
+}
+#footerArea .footerInner .footerTop .iconButton02 {
+  float: right;
+  overflow: hidden;
+}
+
+#footerArea .footerInner .footerTop .iconButton02 li {
+  float: left;
+  margin-right: 15px;
+}
+#footerArea .footerInner .footerTop .iconButton02 a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 17.5px;
+  color: #fff;
+  background: #555 no-repeat 50% 50%;
+  font-size: 0.875em;
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+}
+#footerArea .footerInner .footerTop .iconButton02 li:hover a {
+  background: #ef495a;
+}
+#footerArea .footerInner .footerTop .iconButton02 li:nth-child(3) {
+  margin-right: 0;
+}
+#footerArea .footerInner .icon1 i {
+  padding: 10px 0 0 13px;
+}
+#footerArea .footerInner .icon2 i {
+  padding: 10px 0 0 12px;
+}
+#footerArea .footerInner .icon3 i {
+  padding: 10px 0 0 14px;
+}
+#footerArea .footerInner .footerBottom {
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+#footerArea .footerInner .footerBottom::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footerArea .footerInner .footerBottom address {
+  float: left;
+  font-size: 1em;
+  line-height: 2em;
+  font-weight: 400;
+}
+#footerArea .footerInner .familySite {
+  float: right;
+  width: 200px;
+  position: relative;
+}
+#footerArea .footerInner .familySite > a {
+  display: block;
+  background: #182eae;
+  color: #fff;
+  padding: 8px 0 10px 10px;
+  transition: all 0.5s ease-out;
+}
+/* #footerArea .footerInner .familySite > a:hover {
+  background: #0081cc;
+} */
+#footerArea .footerInner .familySite ul {
+  width: 200px;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  display: none;
+}
+#footerArea .footerInner .familySite ul a {
+  display: block;
+  padding: 8px 0 10px 15px;
+  background: #182eae;
+  color: #fff;
+  font-weight: 300;
+  transition: all 0.5s ease-out;
+}
+#footerArea .footerInner .familySite ul a:hover {
+  background: #0081cc;
+  color: #fff;
+}
+/* #footerArea .footerInner .familySite li {
+  height: inherit;
+} */
+#footerArea .footerInner .familySite > a span {
+  float: right;
+  margin: 1px 15px 0 0;
+}
+
+.topMove {
+  color: #fff;
+  display: none;
+  width: 70px;
+  height: 70px;
+  background: #0081cc;
+  position: fixed;
+  right: 50%;
+  bottom: 50px;
+  margin-right: -850px;
+  overflow: hidden;
+  transition: all .3s ease-out;
+}
+.topMoveOn {
+  animation: topMoveOn .5s forwards;
+}
+@keyframes topMoveOn {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.topMove span {
+  display: block;
+  width: 40px;
+  height: 48px;
+  background: url(../images/topMoveButton_03.png) 0 no-repeat;
+  margin: 12px 15px 0 15px;
+  text-indent: -9999px;
+  overflow: hidden;  
+  transform: translateY(0);
+  transition: all .3s ease-out;
+}
+.topMove:hover span {
+  transform: translateY(-20%);
+}
