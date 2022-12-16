@@ -369,18 +369,4 @@
       </div>
     </div>
   </body>
-
-  <script>
-    var xhr1 = new XMLHttpRequest();
-    var url = 'http://openAPI.seoul.go.kr:8088/55494a694868656531303550656c554a/xml/SearchParkInfoService/1/5/';
-    xhr1.onload = function(){
-      if(xhr1.status === 200){ // <== 호출 상태가 정상적일때
-			alert('Status: '+this.status+
-				'\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+
-				'\nBody: '+this.responseText['P_PARK']);
-			}
-    };
-    xhr1.open('GET', url);
-    xhr1.send('');
-  </script>
 </html>
