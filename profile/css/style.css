@@ -1,0 +1,696 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/*  Reset CSS  */
+* { margin:0;  padding:0;}
+ol,ul { list-style: none; }
+a { outline:0; text-decoration:none; color:#333; }
+img { border:0;}
+body { font-size: 16px; font-family: "Noto Sans KR","Roboto","Jost", sans-serif; color:#333; } 
+
+
+/*로고*/
+h1 {position:fixed; top:40px; left:50px; z-index:10; border: 3px solid #4B1DF2;}
+h1 a {display: block; color: #4B1DF2; padding: 3px 10px;  font-size: 1.5rem; font-weight: 600; font-style: italic;}
+/*sns*/
+/* #sns { position:fixed; top:40px; right:50px; z-index:14;}
+#sns li { float:left; margin-left:20px; color: #4B1DF2; font-size: 1.125rem;} */
+
+/*메뉴*/
+#menu {padding-left: 50px; position:fixed; top:40%; left:0px; margin-top:-100px; z-index:13;}
+#menu a {position: relative; display:block; height:50px; font-family:"Roboto"; font-size:16px; font-weight: 500; color:#000; text-align:start; box-sizing:border-box; opacity:0.8; transition:all 0.5s;}
+#menu li:hover a {font-size:18px;  opacity:1; font-weight: 700;}
+#menu li.on a {opacity:1;}
+
+#menu li:nth-child(1):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(2):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(3):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(4):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(5):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(6):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(7):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(8):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(9):hover a { color:#4B1DF2; border-color:#4B1DF2;}
+
+#menu li a::before {content: '';display: block;width: 10px;height: 10px;background: #4B1DF2;position: absolute;opacity: 0; transition: all .25s;}
+#menu li:hover a::before {opacity: 1;}
+#menu li:nth-child(1) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(2) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(3) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(4) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(5) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(6) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(7) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(8) a::before {left: -15px;top: -10px;}
+#menu li:nth-child(9) a::before {left: -15px;top: -10px;}
+
+#menu li.on a::before {opacity: 1;}
+
+#menu li:nth-child(1).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(2).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(3).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(4).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(5).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(6).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(7).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(8).on a { color:#4B1DF2; border-color:#4B1DF2;}
+#menu li:nth-child(9).on a { color:#4B1DF2; border-color:#4B1DF2;}
+
+
+/*레이아웃*/
+section { width:100%; position:relative; background-size:cover; background-position:right center; overflow:hidden;}
+/* background-attachment:fixed; */
+/* section:nth-child(1) { background-image:url(../img/bg1.jpg); }
+section:nth-child(2) { background-image:url(../img/bg2.jpg); }
+section:nth-child(3) { background-image:url(../img/bg3.jpg); }
+section:nth-child(4) { background-image:url(../img/bg4.jpg); } */
+
+/*텍스트 박스*/
+#home {width: 100%; text-align: center; position:absolute; top:50%; left:55%; z-index:11; transform: translate(-50%, -50%);}
+#home p { color:#333; margin-bottom: 30px; font-weight: 600; font-size: 100px;}
+article {width: 80%; text-align: start; position:absolute; top:50%; left: 60%; z-index:11; transform: translate(-50%, -50%);}
+
+
+/* 본문 */
+#profile {
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+}
+#profileLeft {
+    width: 30%;
+    padding-top: 1rem;
+}
+#profileCenter {
+    width: 20%;
+    text-align: center;
+    padding-top: 6rem;
+}
+#profileRight {
+    width: 45%;
+}
+#profileRight .profileSpan {
+    color: #4B1DF2;
+    font-size: 14px;
+    font-weight: 400;
+}
+#profileRight > p {margin-bottom: 20px;}
+#profileTable {
+    width: 70%;
+    border-collapse: collapse;
+}
+#profileTable tr {border-bottom: 1px solid #ccc;}
+#profileTable tr td {width: 50%; padding: 30px 0;}
+#profileTable p {font-size: 18px; font-weight: 700; letter-spacing: -1px; margin-bottom: 10px;}
+#profileTable span {font-size: 16px; font-weight: 400; letter-spacing: 0;}
+
+
+#pcZone::after,
+#mobileZone::after {
+    content: '';
+    display: block;
+    width: 650px;
+    height: 100px;
+    background: url(../img/Logo_color1.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -5rem;
+    top: -1rem;
+    opacity: .1;
+}
+#resZone::after {
+    content: '';
+    display: block;
+    width: 650px;
+    height: 60px;
+    background: url(../img/Logo_color2.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -13rem;
+    top: 0rem;
+    opacity: .2;
+}
+#bootZone::after {
+    content: '';
+    display: block;
+    width: 650px;
+    height: 60px;
+    background: url(../img/Logo_color3.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -16.5rem;
+    top: 0rem;
+    opacity: .1;
+}
+#wordZone::after {
+    content: '';
+    display: block;
+    width: 650px;
+    height: 200px;
+    background: url(../img/Logo_color4.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -10.5rem;
+    top: -4.5rem;
+    opacity: .1;
+}
+#vueZone::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url(../img/Logo_color5.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -7rem;
+    top: -4rem;
+    opacity: .1;
+}
+#reactZone::after {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background: url(../img/Logo_color6.png) 50% 50% no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: -7rem;
+    top: -5rem;
+    opacity: .1;
+}
+
+#pcZone, #mobileZone, #resZone, #bootZone, #wordZone, #vueZone, #reactZone {
+    display: flex;
+    gap: 7rem;
+    text-align: start;
+    margin: 0 auto;
+    justify-content: start;
+    position: relative;
+}
+#pcLeft, #mobileLeft, #resLeft, #bootLeft, #wordLeft, #vueLeft, #reactLeft {
+    width: 550px;
+    padding-right: 4rem;
+    padding-top: 2rem;
+}
+#pcLeft h2, #mobileLeft h2, #resLeft h2, #bootLeft h2, #wordLeft h2,
+#vueLeft h2, #reactLeft h2 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#pcLeft p, #mobileLeft p, #resLeft p, #bootLeft p, #wordLeft p,
+#vueLeft p, #reactLeft p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4B1DF2;
+    margin: 30px 0;
+    margin-bottom: 15px;
+}
+#pcLeft #fontAndColor, #mobileLeft #fontAndColor {
+    font-size: 18px;
+    color: #ccc;
+}
+#pcLeft #fontAndColor span:nth-child(1),
+#mobileLeft #fontAndColor span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #0081cc;
+}
+#pcLeft #fontAndColor span:nth-child(2),
+#mobileLeft #fontAndColor span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(239, 73, 90, 1);
+}
+#resLeft #fontAndColor2 {
+    font-size: 18px;
+    color: #ccc;
+}
+#resLeft #fontAndColor2 span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(113, 0, 0, 1);
+}
+#resLeft #fontAndColor2 span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgb(253, 227, 6);
+}
+#bootLeft #fontAndColor3 {
+    font-size: 18px;
+    color: #ccc;
+}
+#bootLeft #fontAndColor3 span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 110, 255);
+}
+#bootLeft #fontAndColor3 span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+}
+#wordLeft #fontAndColor4 {
+    font-size: 18px;
+    color: #ccc;
+}
+#wordLeft #fontAndColor4 span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #f9ba25;
+}
+#wordLeft #fontAndColor4 span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgb(0, 0, 0);
+}
+#vueLeft #fontAndColor5 {
+    font-size: 18px;
+    color: #ccc;
+}
+#vueLeft #fontAndColor5 span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #4a79c6;
+}
+#vueLeft #fontAndColor5 span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #23ac61;
+}
+#reactLeft #fontAndColor6 {
+    font-size: 18px;
+    color: #ccc;
+}
+#reactLeft #fontAndColor6 span:nth-child(1) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #3e4551;
+}
+#reactLeft #fontAndColor6 span:nth-child(2) {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #61dbfb;
+}
+#pcRight, #mobileRight, #resRight, #bootRight, #wordRight,
+#vueRight, #reactRight {
+    width: 650px;
+    position: relative;
+    text-align: center;
+}
+#pcRight img:nth-child(2),
+#mobileRight img:nth-child(2),
+#resRight img:nth-child(2),
+#bootRight img:nth-child(2),
+#wordRight img:nth-child(2),
+#vueRight img:nth-child(2),
+#reactRight img:nth-child(2) {
+    position: absolute;
+    left: 64px;
+    top: 13px;
+}
+
+/* 버튼모양 */
+.css-button {
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: 30px;
+}
+.css-button-retro--sky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #333;
+    color: #fff;
+    background: transparent;
+}
+.css-button-retro--sky:hover {
+    border: 1px solid #fff;
+}
+.css-button-retro--sky:hover:after {
+    top: 0;
+    left: 0;
+}
+.css-button-retro--sky:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #4B1DF2;
+}
+
+/* home text */
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+.button {
+    --border-right: 12px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #4B1DF2;
+    --fs-size: 100px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+.hover-text {
+    position: absolute;
+    top: -15px !important;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+.button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 40px var(--animation-color))
+}
+
+
+/* profile btns */
+#profileCenter a {
+    display: block;
+    width: 50%;
+    margin: 50px auto;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 10px 15px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 14px;
+    background: #4B1DF2;
+    border: none;
+    color: #333;
+}
+#profileCenter a:hover {
+    letter-spacing: 0.25em;
+    background: #4B1DF2;
+    color: #4B1DF2;
+    box-shadow: 0 0 45px #4B1DF2;
+}
+#profileCenter a::before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #fff;
+}
+#profileCenter a span {
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+#profileCenter a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+#profileCenter a i::before {
+    content: '';
+    position: absolute;
+    border: 2px solid #4B1DF2;
+    width: 7px;
+    height: 4px;
+    top: -3.5px;
+    left: 80%;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+#profileCenter a:hover i::before {
+    width: 20px;
+    left: 20%;
+}
+#profileCenter a i::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #4B1DF2;
+    width: 7px;
+    height: 4px;
+    bottom: -3.5px;
+    left: 20%;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+#profileCenter a:hover i::after {
+    width: 20px;
+    left: 80%;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    background: #4B1DF2;
+}
+footer address p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.125rem;
+    font-style: normal;
+    padding: 15px 50px;
+}
+
+/* profile card */
+.card {
+    /* width: 70%; */
+    min-height: 480px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    z-index: 1;
+}
+.tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+}
+.circle {
+    padding: 0 4px;
+}
+.box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+}
+.red {
+    background-color: #ff605c;
+}
+.yellow {
+    background-color: #ffbd44;
+}
+.green {
+    background-color: #00ca4e;
+}
+.card__content {
+    text-align: center;
+}
+.card__content p {
+    color: #333;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-16 22:8:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation focus-in-expand
+ * ----------------------------------------
+ */
+.focus-in-expand {
+	-webkit-animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.focus-in-expand2 {
+	-webkit-animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-expand 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .5s;
+}
+@keyframes focus-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+}
+100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+}
+}
+@keyframes focus-in-expand {
+0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+}
+100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+}
+}
+@keyframes focus-in-expand2 {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+    }
+    @keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+                filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+                filter: blur(0px);
+        opacity: 1;
+    }
+    }
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-12-16 23:17:19
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-flicker-in-glow
+ * ----------------------------------------
+ */
+.text-flicker-in-glow {
+    animation: text-flicker-in-glow 3s linear infinite alternate both;
+}
+@keyframes text-flicker-in-glow {
+0% {
+    opacity: 0;
+}
+10% {
+    opacity: 1;
+    text-shadow: none;
+}
+30% {
+    opacity: 0;
+    text-shadow: none;
+}
+50% {
+    opacity: 0;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.45), 0 0 60px rgba(255, 255, 255, 0.25);
+}
+75% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.55), 0 0 60px rgba(255, 255, 255, 0.35), 0 0 100px rgba(255, 255, 255, 0.1);
+}
+100% {
+    opacity: 0;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*첫 번째 박스 이미지*/
+.p11 { position:absolute; bottom:200px; right:285px; transform: rotate(.03turn);}
+.p12 { position:absolute; bottom:250px; right:120px; transform: rotate(-.03turn);}
+.p13 { position:absolute; bottom:120px; right:175px; transform: rotate(-.03turn);}
+
+/*두 번째 박스 이미지*/
+.p21 { position:absolute; top:120px; left:350px; transform: rotate(.03turn);}
+.p22 { position:absolute; bottom:120px; left:300px;}
+.p31 { position:absolute; top:100px; right:225px; transform: rotate(-.03turn);}
+
+/*세 번째 박스 이미지 */
+.p32 { position:absolute; bottom:-270px; right:110px;}
+.p33 { position:absolute; bottom:-130px; right:-70px;}
+
+/*네 번째 박스 이미지 */
+.p41 { position:absolute; bottom:-120px; right:20px;}
+.p42 { position:absolute; bottom:-180px; right:0px;}
