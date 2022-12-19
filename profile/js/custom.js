@@ -16,22 +16,15 @@
 		var posX= e.pageX;
 		//변수 posY에 마우스 커서의 y축 위치 저장
 		var posY= e.pageY;
-		
-		//첫 번째 박스의 이미지 위치값을 마우스 커서의 위치값과 연동
-		$(".p11").css({"right":340-(posX/30) , "bottom":210-(posY/30) });
-		$(".p12").css({"right":40+(posX/20) , "bottom":230+(posY/20) });
-		$(".p13").css({"right":250-(posX/20) , "bottom":140-(posY/20) });		
-		$(".p21").css({"left":400-(posX/30) , "top":120-(posY/30) });
-		$(".p22").css({"left":270+(posX/50) , "bottom":120+(posY/50) });
-		$(".p31").css({"right":275-(posX/30) , "top":110-(posY/30) });
-		
-		//세 번째 박스의 이미지 위치값을 마우스 커서의 위치값과 연동
-		$(".p32").css({"right":110+(posX/20) , "bottom":-270+(posY/20) });
-		$(".p33").css({"right":-70+(posX/20) , "bottom":-130+(posY/20) });	
-		
-		//네 번째 박스의 이미지 위치값을 마우스 커서의 위치값과 연동
-		$(".p41").css({"right":20-(posX/30) , "bottom":-120-(posY/30) });
-		$(".p42").css({"right":0+(posX/20) , "bottom":-180+(posY/20) });	
+		if(matchMedia("screen and (min-width:1025px)").matches) {
+			//첫 번째 박스의 이미지 위치값을 마우스 커서의 위치값과 연동
+			$(".p11").css({"right":340-(posX/30) , "bottom":210-(posY/30) });
+			$(".p12").css({"right":40+(posX/20) , "bottom":230+(posY/20) });
+			$(".p13").css({"right":250-(posX/20) , "bottom":140-(posY/20) });		
+			$(".p21").css({"left":400-(posX/30) , "top":120-(posY/30) });
+			$(".p22").css({"left":270+(posX/50) , "bottom":120+(posY/50) });
+			$(".p31").css({"right":275-(posX/30) , "top":110-(posY/30) });
+		}
 	});
 
     //메뉴 버튼 클릭시
