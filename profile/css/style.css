@@ -951,6 +951,30 @@ to {
     section:nth-child(9)::after {
         bottom: 14rem;
     }
+    #resRight .resIpad {
+        top: 40%;
+    }
+    #resRight .resIphone {
+        top: 52.7%;
+    }
+    #bootRight .bootIpad {
+        top: 40%;
+    }
+    #bootRight .bootIphone {
+        top: 52.7%;
+    }
+    #wordRight .wordIpad {
+        top: 40%;
+    }
+    #wordRight .wordIphone {
+        top: 52.7%;
+    }
+    #vueRight .vueIpad {
+        top: 40%;
+    }
+    #vueRight .vueIphone {
+        top: 52.7%;
+    }
 } 
 
 @media screen and (max-width:768px) {
@@ -994,6 +1018,38 @@ to {
     #pcRight img:nth-child(2), #mobileRight img:nth-child(2), #resRight img:nth-child(2), #bootRight img:nth-child(2), #wordRight img:nth-child(2), #vueRight img:nth-child(2), #reactRight img:nth-child(2) {
         width: 70.5%;
         left: 72px;
+    }
+    #resRight .resIpad {
+        width: 26%;
+        top: 40%;
+    }
+    #resRight .resIphone {
+        width: 13%;
+        top: 52.25%;
+    }
+    #bootRight .bootIpad {
+        width: 26%;
+        top: 40%;
+    }
+    #bootRight .bootIphone {
+        width: 13%;
+        top: 52.25%;
+    }
+    #wordRight .wordIpad {
+        width: 26%;
+        top: 40%;
+    }
+    #wordRight .wordIphone {
+        width: 13%;
+        top: 52.25%;
+    }
+    #vueRight .vueIpad {
+        width: 26%;
+        top: 40%;
+    }
+    #vueRight .vueIphone {
+        width: 13%;
+        top: 52.25%;
     }
 }
 
@@ -1067,6 +1123,46 @@ to {
     .css-button {
         margin-top: 10px;
     }
+    #resRight .resIpad {
+        width: 23.5%;
+        top: 40%;
+        left: 7%;
+    }
+    #resRight .resIphone {
+        width: 11.5%;
+        top: 52.25%;
+        left: 2%;
+    }
+    #bootRight .bootIpad {
+        width: 23.5%;
+        top: 40%;
+        left: 7%;
+    }
+    #bootRight .bootIphone {
+        width: 11.5%;
+        top: 52.5%;
+        left: 2%;
+    }
+    #wordRight .wordIpad {
+        width: 23.5%;
+        top: 40%;
+        left: 7%;
+    }
+    #wordRight .wordIphone {
+        width: 11.5%;
+        top: 52.25%;
+        left: 2%;
+    }
+    #vueRight .vueIpad {
+        width: 23.5%;
+        top: 40%;
+        left: 7%;
+    }
+    #vueRight .vueIphone {
+        width: 11.5%;
+        top: 52.25%;
+        left: 2%;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -1117,4 +1213,94 @@ to {
         right: 1rem;
         bottom: 1rem;
     }
+    #resRight .resIpad {
+        width: 21.5%;
+        top: 40%;
+        left: 10%;
+    }
+    #resRight .resIphone {
+        width: 10%;
+        top: 52.5%;
+        left: 4.5%;
+    }
+    #bootRight .bootIpad {
+        width: 21.5%;
+        top: 40%;
+        left: 10%;
+    }
+    #bootRight .bootIphone {
+        width: 10%;
+        top: 52%;
+        left: 4.5%;
+    }
+    #wordRight .wordIpad {
+        width: 21.5%;
+        top: 40%;
+        left: 10%;
+    }
+    #wordRight .wordIphone {
+        width: 10%;
+        top: 52%;
+        left: 4.5%;
+    }
+    #vueRight .vueIpad {
+        width: 21.5%;
+        top: 40%;
+        left: 10%;
+    }
+    #vueRight .vueIphone {
+        width: 10%;
+        top: 52%;
+        left: 4.5%;
+    }
+}
+
+/* 반응형 목업 추가 */
+.resIpad {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 39%;
+}
+.resIphone {
+    width: 15%;
+    position: absolute;
+    left: -7.5%;
+    top: 51.4%;
+}
+.bootIpad {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 39%;
+}
+.bootIphone {
+    width: 15%;
+    position: absolute;
+    left: -7.5%;
+    top: 51.4%;
+}
+.wordIpad {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 39%;
+}
+.wordIphone {
+    width: 15%;
+    position: absolute;
+    left: -7.5%;
+    top: 51.4%;
+}
+.vueIpad {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: 39%;
+}
+.vueIphone {
+    width: 15%;
+    position: absolute;
+    left: -7.5%;
+    top: 51.4%;
 }
