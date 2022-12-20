@@ -10,8 +10,25 @@ body { font-size: 16px; font-family: "Noto Sans KR","Roboto","Jost", sans-serif;
 
 
 /*로고*/
-h1 {position:fixed; top:40px; left:50px; z-index:10; border: 3px solid #4B1DF2;}
-h1 a {display: block; color: #4B1DF2; padding: 3px 10px;  font-size: 1.5rem; font-weight: 600; font-style: italic;}
+h1 {position:fixed; top:40px; left:50px; z-index:10;}
+h1 a {
+    display: block; 
+    width: 125px;
+    height: 50px;
+    background: url(../img/logo.svg) 50% 50% no-repeat; 
+    background-size: 100% auto; 
+    /* padding: 1rem 0; */
+}
+.hidden {
+    display: block;
+    width: 1px;
+    height: 1px;
+    text-indent: -999px;
+    overflow: hidden;
+    position: absolute;
+    left: -1000%;
+    color: #fff;
+}
 /*sns*/
 /* #sns { position:fixed; top:40px; right:50px; z-index:14;}
 #sns li { float:left; margin-left:20px; color: #4B1DF2; font-size: 1.125rem;} */
@@ -456,7 +473,7 @@ article {width: 80%; text-align: start; position:absolute; top:50%; left: 60%; z
 .button {
     --border-right: 12px;
     --text-stroke-color: rgba(255,255,255,0.6);
-    --animation-color: #4B1DF2;
+    --animation-color: #ff9100;
     --fs-size: 100px;
     letter-spacing: 3px;
     text-decoration: none;
@@ -482,7 +499,7 @@ article {width: 80%; text-align: start; position:absolute; top:50%; left: 60%; z
 }
 .button:hover .hover-text {
     width: 100%;
-    filter: drop-shadow(0 0 40px var(--animation-color))
+    /* filter: drop-shadow(0 0 40px var(--animation-color)) */
 }
 
 
@@ -696,7 +713,7 @@ footer address p {
  * ----------------------------------------
  */
 .text-flicker-in-glow {
-    animation: text-flicker-in-glow 3s linear infinite alternate both;
+    animation: text-flicker-in-glow 3.5s linear infinite alternate both;
 }
 @keyframes text-flicker-in-glow {
 0% {
@@ -978,6 +995,9 @@ to {
 } 
 
 @media screen and (max-width:768px) {
+    h1 a {
+        width: 100px;
+    }
     #home {
         left: 60%;
     }
@@ -1054,6 +1074,9 @@ to {
 }
 
 @media screen and (max-width:640px) {
+    h1 a {
+        width: 90px;
+    }
     #home p, #home strong {
         font-size: 2.5rem;
     }
