@@ -1277,6 +1277,37 @@ to {
         left: 4.5%;
     }
 }
+@media screen and (max-width:412px) {
+    h1 {
+        left: 20px;
+    }
+    #menu {
+        padding-left: 20px;
+    }
+    .switch-label span {
+        font-size: 0.6rem;
+    }
+    #pcRight img:nth-child(2), #mobileRight img:nth-child(2), #resRight img:nth-child(2), #bootRight img:nth-child(2), #wordRight img:nth-child(2), #vueRight img:nth-child(2), #reactRight img:nth-child(2) {
+        left: 65px;
+        top: 0.25rem;
+    }
+}
+@media screen and (max-width:390px) {
+    h1 {
+        left: 20px;
+    }
+    #menu {
+        padding-left: 20px;
+    }
+    .switch-label span {
+        font-size: 0.6rem;
+    }
+    #pcRight img:nth-child(2), #mobileRight img:nth-child(2), #resRight img:nth-child(2), #bootRight img:nth-child(2), #wordRight img:nth-child(2), #vueRight img:nth-child(2), #reactRight img:nth-child(2) {
+        left: 62px;
+        top: 0.25rem;
+    }
+}
+
 
 /* 반응형 목업 추가 */
 .resIpad {
