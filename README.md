@@ -5,5 +5,5 @@ Skill별 각기 다른 7가지의 포트폴리오가 업로드 되어 있습니�
 
 프로필 링크 -> https://heen3316.cafe24.com/profile
 
-* 2023. 02. 06 일자로 FE Interview App 배포.
-  - FE 면접 준비에 도움이 되는 App이길 바라며...
+*2023-02-06 일자로 FE Interview App 배포완료...<br/>
+*FE 면접 준비에 도움이 되는 App이길 바라며...
